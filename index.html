@@ -1,15 +1,1018 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="az">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex">
-  <title>Панель управления сайтом — Emlak Arenda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta_title">Emlak Arenda — Bakıda mənzil, ev və ofis icarəsi</title>
+
+<!-- === SEO: замените домен-заглушку https://www.emlakarenda.az/ на ваш настоящий домен во всех тегах ниже === -->
+<meta name="description" data-i18n-content="meta_description" content="Bakıda mənzil, ev və ofis icarəsi. Yoxlanmış elanlar, sənəd dəstəyi və sürətli seçim — Emlak Arenda ilə.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Emlak Arenda">
+<link rel="canonical" href="https://www.emlakarenda.az/">
+
+<!-- Open Graph (Facebook, Instagram, WhatsApp önizləmələri) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emlak Arenda">
+<meta property="og:locale" content="az_AZ">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" data-i18n-content="meta_title" content="Emlak Arenda — Bakıda mənzil, ev və ofis icarəsi">
+<meta property="og:description" data-i18n-content="meta_description" content="Bakıda mənzil, ev və ofis icarəsi. Yoxlanmış elanlar, sənəd dəstəyi və sürətli seçim — Emlak Arenda ilə.">
+<meta property="og:url" content="https://www.emlakarenda.az/">
+<meta property="og:image" content="https://www.emlakarenda.az/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" data-i18n-content="meta_title" content="Emlak Arenda — Bakıda mənzil, ev və ofis icarəsi">
+<meta name="twitter:description" data-i18n-content="meta_description" content="Bakıda mənzil, ev və ofis icarəsi. Yoxlanmış elanlar, sənəd dəstəyi və sürətli seçim — Emlak Arenda ilə.">
+<meta name="twitter:image" content="https://www.emlakarenda.az/og-image.jpg">
+
+<!-- Structured data — помогает Google показывать компанию как организацию в выдаче -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Emlak Arenda",
+  "url": "https://www.emlakarenda.az/",
+  "image": "https://www.emlakarenda.az/og-image.jpg",
+  "telephone": "+994000000000",
+  "email": "info@emlak.arenda",
+  "areaServed": {
+    "@type": "City",
+    "name": "Baku"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nümunə küçəsi 12",
+    "addressLocality": "Baku",
+    "addressCountry": "AZ"
+  },
+  "sameAs": [
+    "https://instagram.com/emlak.arenda",
+    "https://www.tiktok.com/@emlak.arenda"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF7F1;
+    --paper: #F3EEE3;
+    --navy: #142433;
+    --navy-2: #1E2F41;
+    --ink: #1E2A38;
+    --ink-soft: #566574;
+    --sand: #E7DDC6;
+    --brass: #A9762F;
+    --brass-light: #C89552;
+    --line: rgba(30,42,56,0.14);
+    --white: #FFFFFF;
+    --radius-s: 4px;
+    --radius-m: 10px;
+    --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces', serif;
+    color:var(--navy);
+    margin:0;
+    font-weight:500;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  button{font-family:inherit; cursor:pointer;}
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:2px solid var(--brass); outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,247,241,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 32px; max-width:var(--maxw); margin:0 auto; gap:20px;
+  }
+  .logo{
+    font-family:'Fraunces', serif; font-size:22px; font-weight:600; color:var(--navy);
+    text-decoration:none; display:flex; align-items:baseline; gap:6px; flex-shrink:0;
+  }
+  .logo em{font-style:italic; color:var(--brass);}
+  .nav-links{display:flex; gap:32px; list-style:none; margin:0; padding:0;}
+  .nav-links a{text-decoration:none; font-size:15px; color:var(--ink); position:relative; padding:4px 0;}
+  .nav-links a:hover{color:var(--brass);}
+  .nav-cta{
+    display:flex; align-items:center; gap:18px;
+  }
+  .phone{font-size:15px; font-weight:600; color:var(--navy); text-decoration:none; white-space:nowrap;}
+  .btn{
+    display:inline-block; padding:13px 26px; border-radius:var(--radius-s);
+    font-size:14px; font-weight:600; text-decoration:none; border:1px solid transparent;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--navy); color:var(--white);}
+  .btn-primary:hover{background:var(--brass);}
+  .btn-outline{border-color:var(--navy); color:var(--navy); background:transparent;}
+  .btn-outline:hover{border-color:var(--brass); color:var(--brass);}
+  .menu-toggle{display:none; background:none; border:none; padding:8px;}
+  .menu-toggle span{display:block; width:22px; height:2px; background:var(--navy); margin:5px 0;}
+
+  /* ---------- Language switcher ---------- */
+  .lang-switch{
+    display:flex; gap:2px; border:1px solid var(--line); border-radius:999px; padding:3px; flex-shrink:0;
+  }
+  .lang-btn{
+    border:none; background:transparent; padding:6px 11px; border-radius:999px;
+    font-size:12.5px; font-weight:700; color:var(--ink-soft); letter-spacing:.02em;
+  }
+  .lang-btn.active{background:var(--navy); color:var(--white);}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:76px 0 100px;}
+  .hero .wrap{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center;
+  }
+  .hero-eyebrow{font-size:14px; color:var(--brass); font-weight:700; margin-bottom:18px;}
+  .hero h1{font-size:50px; line-height:1.1;}
+  .hero h1 i{font-style:italic; color:var(--brass);}
+  .hero p{margin-top:22px; font-size:17px; color:var(--ink-soft); max-width:46ch;}
+  .hero-actions{display:flex; gap:16px; margin-top:34px; flex-wrap:wrap;}
+  .hero-stats{display:flex; gap:40px; margin-top:52px; padding-top:32px; border-top:1px solid var(--line); flex-wrap:wrap;}
+  .stat b{font-family:'Fraunces', serif; font-size:28px; color:var(--navy); display:block; font-weight:500;}
+  .stat span{font-size:13px; color:var(--ink-soft);}
+
+  .hero-visual{position:relative;}
+  .hero-visual .frame-main{
+    border-radius:var(--radius-m); overflow:hidden; aspect-ratio:4/5;
+  }
+  .hero-visual .frame-main img{width:100%; height:100%; object-fit:cover;}
+  .price-card{
+    position:absolute; left:-38px; bottom:36px;
+    background:var(--navy); color:var(--white);
+    padding:20px 24px; border-radius:var(--radius-m);
+    width:220px; box-shadow:0 18px 40px rgba(20,36,51,0.28);
+  }
+  .price-card .loc{font-size:12px; color:var(--sand); margin-bottom:6px;}
+  .price-card .amount{font-family:'Fraunces', serif; font-size:24px; font-weight:500;}
+  .price-card .amount span{font-size:13px; color:var(--sand); font-family:'Manrope',sans-serif; font-weight:400;}
+
+  /* ---------- Section shared ---------- */
+  section{padding:96px 0;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    gap:40px; margin-bottom:52px; flex-wrap:wrap;
+  }
+  .section-head h2{font-size:36px; max-width:22ch;}
+  .section-head p{color:var(--ink-soft); max-width:40ch; font-size:15.5px;}
+
+  /* ---------- Filters ---------- */
+  .filters{display:flex; gap:10px; margin-bottom:40px; flex-wrap:wrap;}
+  .filter-btn{
+    padding:10px 20px; border-radius:999px; border:1px solid var(--line);
+    background:var(--white); font-size:14px; font-weight:600; color:var(--ink-soft);
+  }
+  .filter-btn.active{background:var(--navy); border-color:var(--navy); color:var(--white);}
+
+  /* ---------- Listings ---------- */
+  .listings-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+  }
+  .listing-card{
+    background:var(--white); border-radius:var(--radius-m); overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .listing-card.featured{grid-column:span 2; display:grid; grid-template-columns:1.1fr 1fr;}
+  .listing-card .photo{position:relative; aspect-ratio:4/3; overflow:hidden;}
+  .listing-card.featured .photo{aspect-ratio:auto; height:100%;}
+  .listing-card .photo img{width:100%; height:100%; object-fit:cover;}
+  .tag{
+    position:absolute; top:14px; left:14px; background:var(--white);
+    padding:5px 12px; border-radius:999px; font-size:12px; font-weight:700; color:var(--navy);
+  }
+  .listing-body{padding:22px;}
+  .listing-body .price{font-family:'Fraunces', serif; font-size:22px; color:var(--navy); font-weight:500;}
+  .listing-body .price span{font-size:13px; color:var(--ink-soft); font-family:'Manrope',sans-serif;}
+  .listing-body h3{font-size:17px; margin-top:8px; font-weight:600; font-family:'Manrope',sans-serif; color:var(--ink);}
+  .listing-body .addr{font-size:13.5px; color:var(--ink-soft); margin-top:4px;}
+  .specs{display:flex; gap:16px; margin-top:16px; padding-top:16px; border-top:1px solid var(--line); flex-wrap:wrap;}
+  .specs span{font-size:13px; color:var(--ink-soft);}
+  .listing-note{font-size:13px; color:var(--ink-soft); margin-top:14px; padding-top:14px; border-top:1px solid var(--line); line-height:1.5;}
+  .gallery-dots{display:flex; gap:8px; margin-top:14px; flex-wrap:wrap;}
+  .gallery-thumb{width:44px; height:44px; object-fit:cover; border-radius:6px; cursor:pointer; opacity:.6; border:2px solid transparent; transition:opacity .15s, border-color .15s;}
+  .gallery-thumb:hover{opacity:.9;}
+  .gallery-thumb.active{opacity:1; border-color:var(--brass);}
+  .listings-more{text-align:center; margin-top:44px;}
+
+  /* ---------- About ---------- */
+  .about{background:var(--navy); color:var(--sand);}
+  .about .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;}
+  .about h2{color:var(--white); font-size:34px; max-width:18ch;}
+  .about p{color:var(--sand); font-size:16px; margin-top:20px; max-width:52ch;}
+  .about-photo{border-radius:var(--radius-m); overflow:hidden; aspect-ratio:3/4;}
+  .about-photo img{width:100%; height:100%; object-fit:cover;}
+  .about-points{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:36px;}
+  .about-points div b{display:block; font-family:'Fraunces', serif; font-size:20px; color:var(--brass-light); font-weight:500; margin-bottom:6px;}
+  .about-points div span{font-size:14px; color:var(--sand);}
+  .editable-note{
+    margin-top:30px; font-size:13px; color:var(--sand); opacity:.7; font-style:italic;
+  }
+
+  /* ---------- Advertising / promo banner ---------- */
+  .ad-banner{
+    background:var(--sand);
+    border-radius:var(--radius-m);
+    padding:48px 52px;
+    display:flex; align-items:center; justify-content:space-between; gap:40px;
+    flex-wrap:wrap;
+  }
+  .ad-banner .ad-label{font-size:12px; font-weight:700; color:var(--brass); margin-bottom:10px;}
+  .ad-banner h3{font-size:26px; max-width:26ch;}
+  .ad-banner p{color:var(--ink-soft); margin-top:10px; max-width:44ch; font-size:15px;}
+  .ad-banner .ad-slot{
+    flex:0 0 320px; height:150px; border:1.5px dashed var(--brass);
+    border-radius:var(--radius-s); display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:20px; color:var(--brass); font-size:13.5px; font-weight:600;
+    background:rgba(255,255,255,0.4);
+  }
+
+  /* ---------- Why us ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius-m); overflow:hidden;}
+  .why-item{background:var(--bg); padding:32px 28px;}
+  .why-item .num{font-family:'Fraunces', serif; font-style:italic; color:var(--brass); font-size:15px;}
+  .why-item h4{font-family:'Manrope',sans-serif; font-size:17px; font-weight:700; color:var(--navy); margin-top:14px;}
+  .why-item p{font-size:14px; color:var(--ink-soft); margin-top:8px;}
+
+  /* ---------- Contact ---------- */
+  .contact .wrap{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px;}
+  .contact-info h2{font-size:34px; max-width:16ch;}
+  .contact-info p{color:var(--ink-soft); margin-top:16px; max-width:38ch;}
+  .info-list{margin-top:36px; display:flex; flex-direction:column; gap:20px;}
+  .info-list div b{display:block; font-size:13px; color:var(--brass); font-weight:700; margin-bottom:4px;}
+  .info-list div span, .info-list div a{font-size:15.5px; color:var(--ink); text-decoration:none;}
+  .socials{display:flex; gap:14px; margin-top:32px;}
+  .social-btn{
+    width:44px; height:44px; border-radius:50%; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; text-decoration:none; color:var(--navy);
+  }
+  .social-btn:hover{background:var(--navy); color:var(--white); border-color:var(--navy);}
+
+  .contact-form{background:var(--white); border:1px solid var(--line); border-radius:var(--radius-m); padding:40px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px;}
+  .form-field{display:flex; flex-direction:column; gap:8px;}
+  .form-field.full{grid-column:1/-1;}
+  label{font-size:13px; font-weight:600; color:var(--navy);}
+  input, textarea, select{
+    padding:13px 14px; border:1px solid var(--line); border-radius:var(--radius-s);
+    font-family:inherit; font-size:14.5px; background:var(--bg); color:var(--ink); width:100%;
+  }
+  textarea{resize:vertical; min-height:100px;}
+  .form-note{font-size:12.5px; color:var(--ink-soft); margin-top:14px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-2); color:var(--sand); padding:56px 0 28px;}
+  .footer-top{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:48px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.12);}
+  footer .logo{color:var(--white);}
+  footer p.tag{font-size:14px; color:var(--sand); opacity:.75; margin-top:14px; max-width:32ch;}
+  footer h5{font-size:13px; color:var(--brass-light); font-weight:700; margin-bottom:16px;}
+  footer ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:11px;}
+  footer a{text-decoration:none; font-size:14.5px; color:var(--sand); opacity:.85;}
+  footer a:hover{opacity:1; color:var(--brass-light);}
+  .footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:24px; font-size:13px; color:var(--sand); opacity:.6; flex-wrap:wrap; gap:12px;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 980px){
+    .nav-links{display:none;}
+    .menu-toggle{display:block;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero h1{font-size:36px;}
+    .price-card{left:20px;}
+    .listings-grid{grid-template-columns:1fr 1fr;}
+    .listing-card.featured{grid-column:span 2; grid-template-columns:1fr;}
+    .about .wrap{grid-template-columns:1fr;}
+    .about-photo{order:-1;}
+    .why-grid{grid-template-columns:1fr 1fr;}
+    .contact .wrap{grid-template-columns:1fr;}
+    .form-row{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr; gap:32px;}
+  }
+  @media (max-width: 560px){
+    .wrap{padding:0 20px;}
+    .nav{padding:16px 20px;}
+    .listings-grid{grid-template-columns:1fr;}
+    .listing-card.featured{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .hero-stats{gap:24px; flex-wrap:wrap;}
+    .ad-banner{padding:32px 24px;}
+    .ad-banner .ad-slot{flex:1 1 100%; height:120px;}
+  }
+</style>
 </head>
 <body>
-  <!-- Вход и авторизация -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <!-- Сама панель Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="logo">Emlak <em>Arenda</em></a>
+    <ul class="nav-links">
+      <li><a href="#listings" data-i18n="nav.listings">Elanlar</a></li>
+      <li><a href="#about" data-i18n="nav.about">Haqqımızda</a></li>
+      <li><a href="#why" data-i18n="nav.why">Niyə biz</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Əlaqə</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="lang-switch" role="group" aria-label="Dil seçimi / Language / Язык">
+        <button class="lang-btn" data-lang="az">AZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="tel:+994000000000" class="phone" style="display:none;" data-content="phone-href" data-content-attr="href-tel">+994 00 000 00 00</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Sorğu göndər</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menyu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <div class="hero-eyebrow" data-i18n="hero.eyebrow">Bakıda əmlak icarəsi</div>
+        <h1 data-i18n-html="hero.h1">Sizə uyğun<br>mənzil və ya <i>ofis<br>tapın</i></h1>
+        <p data-i18n="hero.p">Bakıda mənzil, ev və kommersiya sahələrinin icarəsində kömək edirik. Sənədləri yoxlayır, obyektləri göstərir və müqavilənin imzalanmasına qədər sizinlə oluruq.</p>
+        <div class="hero-actions">
+          <a href="#listings" class="btn btn-primary" data-i18n="hero.btn1">Elanlara bax</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.btn2">Əmlakınızı icarəyə verin</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>120+</b><span data-i18n="hero.stat1">bazadakı elan</span></div>
+          <div class="stat"><b data-i18n="hero.stat2_num">8 il</b><span data-i18n="hero.stat2">icarə bazarında</span></div>
+          <div class="stat"><b data-i18n="hero.stat3_num">24 saat</b><span data-i18n="hero.stat3">orta cavab müddəti</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame-main">
+          <img src="https://picsum.photos/seed/emlak-hero/900/1150" alt="Bakıda icarəyə verilən mənzil" data-i18n-alt="hero.img_alt" data-content="hero-image">
+        </div>
+        <div class="price-card">
+          <div class="loc" data-i18n="hero.price_loc">Nizami küçəsi, mərkəz</div>
+          <div class="amount">1 200 ₼ <span data-i18n="hero.price_unit">/ ay</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LISTINGS ===================== -->
+  <section id="listings">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="listings.h2">Aktual elanlar</h2>
+        <p data-i18n="listings.p">Bazamızdan seçilmiş elanlar. Tam kataloq — tələb üzrə və ya sosial şəbəkələrimizdə.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filters.all">Hamısı</button>
+        <button class="filter-btn" data-filter="apartment" data-i18n="filters.apartment">Mənzillər</button>
+        <button class="filter-btn" data-filter="office" data-i18n="filters.office">Ofislər</button>
+        <button class="filter-btn" data-filter="house" data-i18n="filters.house">Evlər</button>
+      </div>
+
+      <!-- Карточки объектов теперь генерируются скриптом из content.json (см. renderListings) -->
+      <div class="listings-grid" id="listingsGrid"></div>
+
+      <div class="listings-more">
+        <a href="#contact" class="btn btn-outline" data-i18n="listings.more">Bütün kataloqa bax</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ADVERTISING BANNER ===================== -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="ad-banner">
+        <div>
+          <div class="ad-label" data-i18n="ad.label">Xüsusi təklif</div>
+          <h3 data-i18n="ad.h3">Reklam banneri və ya ayın aksiyası üçün yer</h3>
+          <p data-i18n="ad.p">Bu blokdan öz aksiyanız üçün (məsələn, «ilk ay endirimli icarə») və ya tərəfdaşa — mebel mağazasına, sığorta şirkətinə və s. — reklam yeri kimi istifadə edə bilərsiniz.</p>
+        </div>
+        <div class="ad-slot" data-i18n="ad.slot">Banner üçün yer<br>(şəkil 320×150)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-text">
+        <h2 data-i18n="about.h2">Şirkətimiz haqqında</h2>
+        <p data-i18n="about.p1">Emlak Arenda Bakıda əmlak agentliyidir. Kirayəçilərə mənzil, ev və ofis tapmaqda, mülk sahiblərinə isə əmlaklarını sürətli və rahat şəkildə icarəyə verməkdə kömək edirik.</p>
+        <p data-i18n="about.p2">Burada şirkətinizin tarixini yaza bilərsiniz: nə vaxt yaradılıb, neçə sövdələşmə bağlanıb, Bakının hansı rayonlarını əhatə edirsiniz və yanaşmanız digərlərindən nə ilə fərqlənir.</p>
+        <div class="about-points">
+          <div><b data-i18n="about.p1_t">Obyektlərin yoxlanması</b><span data-i18n="about.p1_d">Elan etməzdən əvvəl əmlakı yoxlayır və sənədləri təsdiqləyirik</span></div>
+          <div><b data-i18n="about.p2_t">Sövdələşmənin müşayiəti</b><span data-i18n="about.p2_d">Baxışdan icarə müqaviləsinin imzalanmasına qədər</span></div>
+          <div><b data-i18n="about.p3_t">Büdcəyə uyğun seçim</b><span data-i18n="about.p3_d">Rayon, büdcə və sahə tələblərini nəzərə alırıq</span></div>
+          <div><b data-i18n="about.p4_t">Mülk sahibləri ilə iş</b><span data-i18n="about.p4_d">Əmlakı bazar qiymətinə icarəyə verməyə kömək edirik</span></div>
+        </div>
+        <p class="editable-note" data-i18n="about.note">Bu mətn qaralamadır. Onu şirkətiniz haqqında həqiqi məlumatlarla əvəz edin: yaranma ili, komanda, fəaliyyət rayonları.</p>
+      </div>
+      <div class="about-photo">
+        <img src="https://picsum.photos/seed/emlak-team/800/1000" alt="Əmlak agentliyinin komandası" data-i18n-alt="about.img_alt" data-content="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="why.h2">Niyə bizə müraciət edirlər</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="num" data-i18n="why.n1">İcarə</div>
+          <h4 data-i18n="why.h1">Yalnız aktual elanlar</h4>
+          <p data-i18n="why.p1">Kataloqdakı hər obyekt yoxlanılır — foto, qiymət və status müntəzəm yenilənir.</p>
+        </div>
+        <div class="why-item">
+          <div class="num" data-i18n="why.n2">Sənədlər</div>
+          <h4 data-i18n="why.h2b">Hüquqi təmizlik</h4>
+          <p data-i18n="why.p2">Mülkiyyət hüququnu yoxlayır və icarə müqaviləsini hazırlayırıq.</p>
+        </div>
+        <div class="why-item">
+          <div class="num" data-i18n="why.n3">Sürət</div>
+          <h4 data-i18n="why.h3">Sürətli seçim</h4>
+          <p data-i18n="why.p3">Sorğudan 24 saat ərzində uyğun variantlar göndəririk.</p>
+        </div>
+        <div class="why-item">
+          <div class="num" data-i18n="why.n4">Dəstək</div>
+          <h4 data-i18n="why.h4">Köçdükdən sonra</h4>
+          <p data-i18n="why.p4">Köçdükdən sonra suallarınız olarsa, əlaqədə qalırıq.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-info">
+        <h2 data-i18n="contact.h2">Bizimlə əlaqə saxlayın</h2>
+        <p data-i18n="contact.p">Sorğu göndərin — icarə variantları seçək və ya əmlakınızı icarəyə verməyə kömək edək.</p>
+        <div class="info-list">
+          <div><b data-i18n="contact.phone_l">Telefon</b><a href="tel:+994000000000" data-content="phone-link" data-content-text="phone">+994 00 000 00 00</a></div>
+          <div><b data-i18n="contact.email_l">Email</b><a href="mailto:info@emlak.arenda" data-content="email-link" data-content-text="email">info@emlak.arenda</a></div>
+          <div><b data-i18n="contact.addr_l">Ofis ünvanı</b><span data-i18n="contact.addr_v">Bakı, Nümunə küçəsi, 12</span></div>
+          <div><b data-i18n="contact.hours_l">İş saatları</b><span data-i18n="contact.hours_v">B.e–Şənbə, 10:00–19:00</span></div>
+        </div>
+        <div class="socials">
+          <a class="social-btn" href="https://instagram.com/emlak.arenda" target="_blank" rel="noopener" aria-label="Instagram" data-content="instagram-link">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.tiktok.com/@emlak.arenda" target="_blank" rel="noopener" aria-label="TikTok" data-content="tiktok-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.2 1.9 3.9 4.4 4.1v3c-1.6.1-3-.4-4.3-1.3v6.7c0 3.4-2.7 6-6 6-3.4 0-6-2.7-6-6s2.7-6 6-6c.4 0 .8 0 1.2.1v3.1a3 3 0 1 0 2.1 2.9V3h2.6z"/></svg>
+          </a>
+          <a class="social-btn" href="https://t.me/emlak_arenda" target="_blank" rel="noopener" aria-label="Telegram" data-content="telegram-link">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19.6c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9L18 6.9c.4-.3-.1-.5-.6-.2L7.3 13.4l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3.4c.9-.3 1.6.2 1.3 1z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return sendForm(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name" data-i18n="form.name_l">Ad</label>
+            <input id="name" name="name" type="text" data-i18n-ph="form.name_ph" placeholder="Adınız" required>
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="form.phone_l">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+994 ..." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="type" data-i18n="form.type_l">Sizi nə maraqlandırır</label>
+            <select id="type" name="type">
+              <option data-i18n="form.opt1">Mənzil icarəsi</option>
+              <option data-i18n="form.opt2">Ofis icarəsi</option>
+              <option data-i18n="form.opt3">Ev icarəsi</option>
+              <option data-i18n="form.opt4">Əmlakımı icarəyə vermək istəyirəm</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="message" data-i18n="form.msg_l">Mesaj</label>
+            <textarea id="message" name="message" data-i18n-ph="form.msg_ph" placeholder="Rayon, büdcə, sahə..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form.submit">Sorğu göndər</button>
+        <p class="form-note" data-i18n="form.note">Bu forma info@emlak.arenda ünvanına hazır məktubla poçt proqramını açır. Sorğuların birbaşa serverə göndərilməsi üçün əlavə xidmət (məsələn, Formspree və ya öz backend-iniz) qoşulmalıdır.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#top" class="logo">Emlak <em>Arenda</em></a>
+        <p class="tag" data-i18n="footer.tag">Bakıda mənzil, ev və ofis icarəsi. Kirayəçilər və mülk sahibləri ilə işləyirik.</p>
+      </div>
+      <div>
+        <h5 data-i18n="footer.sections">Bölmələr</h5>
+        <ul>
+          <li><a href="#listings" data-i18n="nav.listings">Elanlar</a></li>
+          <li><a href="#about" data-i18n="nav.about">Haqqımızda</a></li>
+          <li><a href="#why" data-i18n="nav.why">Niyə biz</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.social">Bizi izləyin</h5>
+        <ul>
+          <li><a href="https://instagram.com/emlak.arenda" target="_blank" rel="noopener" data-content="instagram-footer">Instagram — @emlak.arenda</a></li>
+          <li><a href="https://www.tiktok.com/@emlak.arenda" target="_blank" rel="noopener" data-content="tiktok-footer">TikTok — @emlak.arenda</a></li>
+          <li><a href="https://t.me/emlak_arenda" target="_blank" rel="noopener" data-content="telegram-footer">Telegram — @emlak_arenda</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Emlak Arenda. Bütün hüquqlar qorunur.</span>
+      <span data-i18n="footer.draft">Sayt qaralamadır — mətnləri və qiymətləri həqiqi məlumatlarla əvəz edin</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const translations = {
+    az: {
+      meta_title: "Emlak Arenda — Bakıda mənzil, ev və ofis icarəsi",
+      meta_description: "Bakıda mənzil, ev və ofis icarəsi. Yoxlanmış elanlar, sənəd dəstəyi və sürətli seçim — Emlak Arenda ilə.",
+      "nav.listings": "Elanlar", "nav.about": "Haqqımızda", "nav.why": "Niyə biz", "nav.contact": "Əlaqə",
+      "nav.cta": "Sorğu göndər",
+      "hero.eyebrow": "Bakıda əmlak icarəsi",
+      "hero.h1": "Sizə uyğun<br>mənzil və ya <i>ofis<br>tapın</i>",
+      "hero.p": "Bakıda mənzil, ev və kommersiya sahələrinin icarəsində kömək edirik. Sənədləri yoxlayır, obyektləri göstərir və müqavilənin imzalanmasına qədər sizinlə oluruq.",
+      "hero.btn1": "Elanlara bax", "hero.btn2": "Əmlakınızı icarəyə verin",
+      "hero.stat1": "bazadakı elan", "hero.stat2_num": "8 il", "hero.stat2": "icarə bazarında",
+      "hero.stat3_num": "24 saat", "hero.stat3": "orta cavab müddəti",
+      "hero.img_alt": "Bakıda icarəyə verilən mənzil",
+      "hero.price_loc": "Nizami küçəsi, mərkəz", "hero.price_unit": "/ ay",
+      "listings.h2": "Aktual elanlar",
+      "listings.p": "Bazamızdan seçilmiş elanlar. Tam kataloq — tələb üzrə və ya sosial şəbəkələrimizdə.",
+      "listings.more": "Bütün kataloqa bax",
+      "filters.all": "Hamısı", "filters.apartment": "Mənzillər", "filters.office": "Ofislər", "filters.house": "Evlər",
+      "tag.apartment": "Mənzil", "tag.office": "Ofis", "tag.house": "Ev",
+      "l1.tag": "Mənzil", "l1.title": "Dəniz bulvarı yaxınlığında işıqlı mənzil", "l1.addr": "Bakı, Nərimanov rayonu",
+      "l1.spec1": "2 otaq", "l1.spec2": "75 m²", "l1.spec3": "5/12 mərtəbə",
+      "l2.tag": "Ofis", "l2.title": "Biznes mərkəzində ofis", "l2.addr": "Bakı, Yasamal rayonu",
+      "l2.spec1": "120 m²", "l2.spec2": "Açıq planlaşdırma",
+      "l3.tag": "Ev", "l3.title": "Şəhərkənarında həyətli ev", "l3.addr": "Mərdəkan",
+      "l3.spec1": "4 otaq", "l3.spec2": "180 m²", "l3.spec3": "3 sot həyət",
+      "l4.tag": "Mənzil", "l4.title": "Metroya yaxın studiya", "l4.addr": "Bakı, 28 May metro stansiyası",
+      "l4.spec1": "Studiya", "l4.spec2": "38 m²",
+      "l5.tag": "Ofis", "l5.title": "6 nəfərədək komanda üçün kompakt ofis", "l5.addr": "Bakı, Xətai rayonu",
+      "l5.spec1": "45 m²", "l5.spec2": "2 kabinet",
+      "l6.tag": "Mənzil", "l6.title": "Geniş, təmirli mənzil", "l6.addr": "Bakı, Nəsimi rayonu",
+      "l6.spec1": "3 otaq", "l6.spec2": "110 m²", "l6.spec3": "9/16 mərtəbə",
+      "ad.label": "Xüsusi təklif", "ad.h3": "Reklam banneri və ya ayın aksiyası üçün yer",
+      "ad.p": "Bu blokdan öz aksiyanız üçün (məsələn, «ilk ay endirimli icarə») və ya tərəfdaşa — mebel mağazasına, sığorta şirkətinə və s. — reklam yeri kimi istifadə edə bilərsiniz.",
+      "ad.slot": "Banner üçün yer<br>(şəkil 320×150)",
+      "about.h2": "Şirkətimiz haqqında",
+      "about.p1": "Emlak Arenda Bakıda əmlak agentliyidir. Kirayəçilərə mənzil, ev və ofis tapmaqda, mülk sahiblərinə isə əmlaklarını sürətli və rahat şəkildə icarəyə verməkdə kömək edirik.",
+      "about.p2": "Burada şirkətinizin tarixini yaza bilərsiniz: nə vaxt yaradılıb, neçə sövdələşmə bağlanıb, Bakının hansı rayonlarını əhatə edirsiniz və yanaşmanız digərlərindən nə ilə fərqlənir.",
+      "about.p1_t": "Obyektlərin yoxlanması", "about.p1_d": "Elan etməzdən əvvəl əmlakı yoxlayır və sənədləri təsdiqləyirik",
+      "about.p2_t": "Sövdələşmənin müşayiəti", "about.p2_d": "Baxışdan icarə müqaviləsinin imzalanmasına qədər",
+      "about.p3_t": "Büdcəyə uyğun seçim", "about.p3_d": "Rayon, büdcə və sahə tələblərini nəzərə alırıq",
+      "about.p4_t": "Mülk sahibləri ilə iş", "about.p4_d": "Əmlakı bazar qiymətinə icarəyə verməyə kömək edirik",
+      "about.note": "Bu mətn qaralamadır. Onu şirkətiniz haqqında həqiqi məlumatlarla əvəz edin: yaranma ili, komanda, fəaliyyət rayonları.",
+      "about.img_alt": "Əmlak agentliyinin komandası",
+      "why.h2": "Niyə bizə müraciət edirlər",
+      "why.n1": "İcarə", "why.h1": "Yalnız aktual elanlar", "why.p1": "Kataloqdakı hər obyekt yoxlanılır — foto, qiymət və status müntəzəm yenilənir.",
+      "why.n2": "Sənədlər", "why.h2b": "Hüquqi təmizlik", "why.p2": "Mülkiyyət hüququnu yoxlayır və icarə müqaviləsini hazırlayırıq.",
+      "why.n3": "Sürət", "why.h3": "Sürətli seçim", "why.p3": "Sorğudan 24 saat ərzində uyğun variantlar göndəririk.",
+      "why.n4": "Dəstək", "why.h4": "Köçdükdən sonra", "why.p4": "Köçdükdən sonra suallarınız olarsa, əlaqədə qalırıq.",
+      "contact.h2": "Bizimlə əlaqə saxlayın",
+      "contact.p": "Sorğu göndərin — icarə variantları seçək və ya əmlakınızı icarəyə verməyə kömək edək.",
+      "contact.phone_l": "Telefon", "contact.email_l": "Email",
+      "contact.addr_l": "Ofis ünvanı", "contact.addr_v": "Bakı, Nümunə küçəsi, 12",
+      "contact.hours_l": "İş saatları", "contact.hours_v": "B.e–Şənbə, 10:00–19:00",
+      "form.name_l": "Ad", "form.name_ph": "Adınız", "form.phone_l": "Telefon",
+      "form.type_l": "Sizi nə maraqlandırır",
+      "form.opt1": "Mənzil icarəsi", "form.opt2": "Ofis icarəsi", "form.opt3": "Ev icarəsi", "form.opt4": "Əmlakımı icarəyə vermək istəyirəm",
+      "form.msg_l": "Mesaj", "form.msg_ph": "Rayon, büdcə, sahə...",
+      "form.submit": "Sorğu göndər",
+      "form.note": "Bu forma info@emlak.arenda ünvanına hazır məktubla poçt proqramını açır. Sorğuların birbaşa serverə göndərilməsi üçün əlavə xidmət (məsələn, Formspree və ya öz backend-iniz) qoşulmalıdır.",
+      "footer.tag": "Bakıda mənzil, ev və ofis icarəsi. Kirayəçilər və mülk sahibləri ilə işləyirik.",
+      "footer.sections": "Bölmələr", "footer.social": "Bizi izləyin",
+      "footer.rights": "© 2026 Emlak Arenda. Bütün hüquqlar qorunur.",
+      "footer.draft": "Sayt qaralamadır — mətnləri və qiymətləri həqiqi məlumatlarla əvəz edin"
+    },
+    ru: {
+      meta_title: "Emlak Arenda — аренда квартир, домов и офисов в Баку",
+      meta_description: "Аренда квартир, домов и офисов в Баку. Проверенные объекты, помощь с документами и быстрый подбор — агентство Emlak Arenda.",
+      "nav.listings": "Объекты", "nav.about": "О нас", "nav.why": "Почему мы", "nav.contact": "Контакты",
+      "nav.cta": "Оставить заявку",
+      "hero.eyebrow": "Аренда недвижимости в Баку",
+      "hero.h1": "Найдите квартиру<br>или офис, <i>который<br>вам подойдёт</i>",
+      "hero.p": "Мы подбираем и сдаём в аренду квартиры, дома и коммерческие помещения в Баку. Проверяем документы, показываем объекты и сопровождаем сделку от просмотра до подписания договора.",
+      "hero.btn1": "Смотреть объекты", "hero.btn2": "Сдать свою недвижимость",
+      "hero.stat1": "объектов в базе", "hero.stat2_num": "8 лет", "hero.stat2": "на рынке аренды",
+      "hero.stat3_num": "24 ч", "hero.stat3": "среднее время ответа",
+      "hero.img_alt": "Квартира, сдающаяся в аренду в Баку",
+      "hero.price_loc": "ул. Низами, центр", "hero.price_unit": "/ мес",
+      "listings.h2": "Актуальные предложения",
+      "listings.p": "Часть объектов из нашей базы. Полный каталог — по запросу или в наших соцсетях.",
+      "listings.more": "Показать весь каталог",
+      "filters.all": "Все", "filters.apartment": "Квартиры", "filters.office": "Офисы", "filters.house": "Дома",
+      "tag.apartment": "Квартира", "tag.office": "Офис", "tag.house": "Дом",
+      "l1.tag": "Квартира", "l1.title": "Светлая квартира у Приморского бульвара", "l1.addr": "Баку, Наримановский район",
+      "l1.spec1": "2 комнаты", "l1.spec2": "75 м²", "l1.spec3": "5/12 этаж",
+      "l2.tag": "Офис", "l2.title": "Офис в бизнес-центре", "l2.addr": "Баку, Ясамальский район",
+      "l2.spec1": "120 м²", "l2.spec2": "Открытая планировка",
+      "l3.tag": "Дом", "l3.title": "Дом с двором в пригороде", "l3.addr": "Мардакян",
+      "l3.spec1": "4 комнаты", "l3.spec2": "180 м²", "l3.spec3": "Двор 3 сот.",
+      "l4.tag": "Квартира", "l4.title": "Студия рядом с метро", "l4.addr": "Баку, ст. м. 28 Мая",
+      "l4.spec1": "Студия", "l4.spec2": "38 м²",
+      "l5.tag": "Офис", "l5.title": "Компактный офис для команды до 6 человек", "l5.addr": "Баку, Хатаинский район",
+      "l5.spec1": "45 м²", "l5.spec2": "2 кабинета",
+      "l6.tag": "Квартира", "l6.title": "Просторная квартира с ремонтом", "l6.addr": "Баку, Насиминский район",
+      "l6.spec1": "3 комнаты", "l6.spec2": "110 м²", "l6.spec3": "9/16 этаж",
+      "ad.label": "Специальное предложение", "ad.h3": "Место под рекламный баннер или акцию месяца",
+      "ad.p": "Этот блок можно использовать для собственной акции (например, «первый месяц аренды со скидкой») или продать как рекламное место партнёру — мебельному магазину, страховой компании и т.д.",
+      "ad.slot": "Место для баннера<br>(изображение 320×150)",
+      "about.h2": "О нашей компании",
+      "about.p1": "Emlak Arenda — агентство недвижимости в Баку. Мы помогаем арендаторам находить квартиры, дома и офисы, а собственникам — быстро и без лишних хлопот сдавать свою недвижимость.",
+      "about.p2": "Здесь вы можете рассказать историю компании: когда основана, сколько сделок закрыто, какие районы Баку вы охватываете и чем ваш подход отличается от других агентств.",
+      "about.p1_t": "Проверка объектов", "about.p1_d": "Осматриваем недвижимость и проверяем документы перед публикацией",
+      "about.p2_t": "Сопровождение сделки", "about.p2_d": "От показа до подписания договора аренды",
+      "about.p3_t": "Подбор под бюджет", "about.p3_d": "Учитываем район, бюджет и требования к площади",
+      "about.p4_t": "Работа с собственниками", "about.p4_d": "Помогаем сдать недвижимость по рыночной цене",
+      "about.note": "Этот текст — черновик. Замените его реальными фактами о компании: годом основания, командой, районами работы.",
+      "about.img_alt": "Команда агентства недвижимости",
+      "why.h2": "Почему обращаются к нам",
+      "why.n1": "Аренда", "why.h1": "Только актуальные объекты", "why.p1": "Каждый объект в каталоге проверяется — фото, цена и статус обновляются регулярно.",
+      "why.n2": "Документы", "why.h2b": "Юридическая чистота", "why.p2": "Проверяем право собственности и готовим договор аренды.",
+      "why.n3": "Скорость", "why.h3": "Быстрый подбор", "why.p3": "Присылаем подходящие варианты в течение суток после заявки.",
+      "why.n4": "Поддержка", "why.h4": "После заселения", "why.p4": "Остаёмся на связи, если возникнут вопросы по объекту после переезда.",
+      "contact.h2": "Свяжитесь с нами",
+      "contact.p": "Оставьте заявку — подберём варианты аренды или поможем сдать вашу недвижимость.",
+      "contact.phone_l": "Телефон", "contact.email_l": "Email",
+      "contact.addr_l": "Адрес офиса", "contact.addr_v": "Баку, ул. Примерная, 12",
+      "contact.hours_l": "Часы работы", "contact.hours_v": "Пн–Сб, 10:00–19:00",
+      "form.name_l": "Имя", "form.name_ph": "Ваше имя", "form.phone_l": "Телефон",
+      "form.type_l": "Что вас интересует",
+      "form.opt1": "Аренда квартиры", "form.opt2": "Аренда офиса", "form.opt3": "Аренда дома", "form.opt4": "Хочу сдать свою недвижимость",
+      "form.msg_l": "Сообщение", "form.msg_ph": "Район, бюджет, площадь...",
+      "form.submit": "Отправить заявку",
+      "form.note": "Форма открывает почтовый клиент с готовым письмом на info@emlak.arenda. Чтобы форма отправляла заявки напрямую на сервер, потребуется подключить обработчик (например, Formspree или собственный backend).",
+      "footer.tag": "Аренда квартир, домов и офисов в Баку. Работаем с арендаторами и собственниками недвижимости.",
+      "footer.sections": "Разделы", "footer.social": "Мы в соцсетях",
+      "footer.rights": "© 2026 Emlak Arenda. Все права защищены.",
+      "footer.draft": "Сайт-черновик — тексты и цены нужно заменить на реальные"
+    },
+    en: {
+      meta_title: "Emlak Arenda — apartment, house and office rentals in Baku",
+      meta_description: "Apartment, house and office rentals in Baku. Verified listings, document support and fast matching — Emlak Arenda agency.",
+      "nav.listings": "Listings", "nav.about": "About", "nav.why": "Why us", "nav.contact": "Contact",
+      "nav.cta": "Get in touch",
+      "hero.eyebrow": "Property rental in Baku",
+      "hero.h1": "Find an apartment<br>or office <i>that<br>fits you</i>",
+      "hero.p": "We help you find and rent apartments, houses and commercial spaces in Baku. We check documents, arrange viewings and support the deal from the first visit to signing the lease.",
+      "hero.btn1": "View listings", "hero.btn2": "List your property",
+      "hero.stat1": "listings in our database", "hero.stat2_num": "8 years", "hero.stat2": "in the rental market",
+      "hero.stat3_num": "24 hrs", "hero.stat3": "average response time",
+      "hero.img_alt": "Apartment available for rent in Baku",
+      "hero.price_loc": "Nizami street, city center", "hero.price_unit": "/ mo",
+      "listings.h2": "Current listings",
+      "listings.p": "A selection from our database. Full catalog available on request or on our social media.",
+      "listings.more": "See full catalog",
+      "filters.all": "All", "filters.apartment": "Apartments", "filters.office": "Offices", "filters.house": "Houses",
+      "tag.apartment": "Apartment", "tag.office": "Office", "tag.house": "House",
+      "l1.tag": "Apartment", "l1.title": "Bright apartment near the Seaside Boulevard", "l1.addr": "Baku, Narimanov district",
+      "l1.spec1": "2 rooms", "l1.spec2": "75 m²", "l1.spec3": "Floor 5/12",
+      "l2.tag": "Office", "l2.title": "Office in a business center", "l2.addr": "Baku, Yasamal district",
+      "l2.spec1": "120 m²", "l2.spec2": "Open floor plan",
+      "l3.tag": "House", "l3.title": "House with a yard on the outskirts", "l3.addr": "Mardakan",
+      "l3.spec1": "4 rooms", "l3.spec2": "180 m²", "l3.spec3": "3-sot yard",
+      "l4.tag": "Apartment", "l4.title": "Studio near the metro", "l4.addr": "Baku, 28 May metro station",
+      "l4.spec1": "Studio", "l4.spec2": "38 m²",
+      "l5.tag": "Office", "l5.title": "Compact office for a team of up to 6", "l5.addr": "Baku, Khatai district",
+      "l5.spec1": "45 m²", "l5.spec2": "2 rooms",
+      "l6.tag": "Apartment", "l6.title": "Spacious renovated apartment", "l6.addr": "Baku, Nasimi district",
+      "l6.spec1": "3 rooms", "l6.spec2": "110 m²", "l6.spec3": "Floor 9/16",
+      "ad.label": "Special offer", "ad.h3": "Space for an ad banner or monthly promotion",
+      "ad.p": "Use this block for your own promotion (e.g. \"first month at a discount\") or sell it as ad space to a partner — a furniture store, an insurance company, etc.",
+      "ad.slot": "Banner space<br>(image 320×150)",
+      "about.h2": "About our company",
+      "about.p1": "Emlak Arenda is a real estate agency in Baku. We help tenants find apartments, houses and offices, and help owners rent out their property quickly and without hassle.",
+      "about.p2": "This is where you can tell your company's story: when it was founded, how many deals you've closed, which districts of Baku you cover, and what makes your approach different.",
+      "about.p1_t": "Property checks", "about.p1_d": "We inspect properties and verify documents before listing",
+      "about.p2_t": "Deal support", "about.p2_d": "From viewing to signing the lease",
+      "about.p3_t": "Budget-matched selection", "about.p3_d": "We consider the district, budget and space requirements",
+      "about.p4_t": "Working with owners", "about.p4_d": "We help owners rent out property at market price",
+      "about.note": "This text is a draft. Replace it with real facts about your company: founding year, team, service areas.",
+      "about.img_alt": "Real estate agency team",
+      "why.h2": "Why people choose us",
+      "why.n1": "Rental", "why.h1": "Only current listings", "why.p1": "Every listing is checked — photos, price and status are updated regularly.",
+      "why.n2": "Documents", "why.h2b": "Legal clarity", "why.p2": "We verify ownership and prepare the lease agreement.",
+      "why.n3": "Speed", "why.h3": "Fast matching", "why.p3": "We send suitable options within 24 hours of your request.",
+      "why.n4": "Support", "why.h4": "After move-in", "why.p4": "We stay in touch if any questions come up after you move in.",
+      "contact.h2": "Get in touch",
+      "contact.p": "Send a request — we'll find rental options or help you list your property.",
+      "contact.phone_l": "Phone", "contact.email_l": "Email",
+      "contact.addr_l": "Office address", "contact.addr_v": "Baku, Sample street, 12",
+      "contact.hours_l": "Working hours", "contact.hours_v": "Mon–Sat, 10:00–19:00",
+      "form.name_l": "Name", "form.name_ph": "Your name", "form.phone_l": "Phone",
+      "form.type_l": "What are you interested in",
+      "form.opt1": "Rent an apartment", "form.opt2": "Rent an office", "form.opt3": "Rent a house", "form.opt4": "I want to list my property",
+      "form.msg_l": "Message", "form.msg_ph": "District, budget, area...",
+      "form.submit": "Send request",
+      "form.note": "This form opens your mail client with a ready message to info@emlak.arenda. To send requests directly to a server, connect a service such as Formspree or your own backend.",
+      "footer.tag": "Apartment, house and office rentals in Baku. We work with both tenants and property owners.",
+      "footer.sections": "Sections", "footer.social": "Follow us",
+      "footer.rights": "© 2026 Emlak Arenda. All rights reserved.",
+      "footer.draft": "Draft site — replace texts and prices with real ones"
+    }
+  };
+
+  // ============ Динамический контент из content.json (редактируется через /admin панель) ============
+  let siteContent = null;   // данные из content.json, когда загрузятся
+  let currentLang = 'az';
+  let currentFilter = 'all';
+
+  // Резервные (fallback) данные — используются, если content.json ещё не загрузился
+  // (например, при открытии файла напрямую с компьютера, без сервера)
+  const fallbackContact = {
+    phone: "+994 00 000 00 00",
+    email: "info@emlak.arenda",
+    instagram: "https://instagram.com/emlak.arenda",
+    instagramHandle: "@emlak.arenda",
+    tiktok: "https://www.tiktok.com/@emlak.arenda",
+    tiktokHandle: "@emlak.arenda",
+    telegram: "https://t.me/emlak_arenda",
+    telegramHandle: "@emlak_arenda"
+  };
+  const fallbackImages = {
+    hero: "https://picsum.photos/seed/emlak-hero/900/1150",
+    about: "https://picsum.photos/seed/emlak-team/800/1000"
+  };
+  const fallbackListings = [
+    {type:"apartment", featured:true, image:"images/listings/azadliq-1.jpg",
+      gallery:["images/listings/azadliq-1.jpg","images/listings/azadliq-2.jpg","images/listings/azadliq-3.jpg","images/listings/azadliq-4.jpg","images/listings/azadliq-5.jpg"],
+      price:"1 400", currency:"₼",
+      az:{title:"Azadlıq metrosu yaxınlığında 3 otaqlı mənzil", addr:"Bakı, Azadlıq m., S.S.Axundov küçəsi", spec1:"3 otaq", spec2:"80 m² (55+25)", spec3:"3-cü mərtəbə, yeni bina", note:"Kommunal xərclər, xadimə, çay, domofon, mühafizə, sürətli internet və kamera nəzarəti qiymətə daxildir. Vasitəçilər narahat etməsin. WhatsApp 077-... (nömrəni tam göndərin)."},
+      ru:{title:"3-комнатная квартира у метро Azadlıq", addr:"Баку, м. Azadlıq, ул. С.С.Ахундова", spec1:"3 комнаты", spec2:"80 м² (55+25)", spec3:"3 этаж, новостройка", note:"Коммунальные услуги, уборщица, чай, домофон, охрана, интернет и видеонаблюдение включены в цену. Агентствам просьба не беспокоить. WhatsApp 077-... (пришлите полный номер)."},
+      en:{title:"3-room apartment near Azadlıq metro", addr:"Baku, Azadlıq metro, S.S. Akhundov street", spec1:"3 rooms", spec2:"80 m² (55+25)", spec3:"3rd floor, new building", note:"Utilities, cleaning, tea, intercom, security, internet and CCTV included in the price. No agents, please. WhatsApp 077-... (send full number)."}},
+    {type:"apartment", featured:false, image:"https://picsum.photos/seed/emlak-1/700/700", price:"1 450", currency:"₼",
+      az:{title:"Dəniz bulvarı yaxınlığında işıqlı mənzil", addr:"Bakı, Nərimanov rayonu", spec1:"2 otaq", spec2:"75 m²", spec3:"5/12 mərtəbə"},
+      ru:{title:"Светлая квартира у Приморского бульвара", addr:"Баку, Наримановский район", spec1:"2 комнаты", spec2:"75 м²", spec3:"5/12 этаж"},
+      en:{title:"Bright apartment near the Seaside Boulevard", addr:"Baku, Narimanov district", spec1:"2 rooms", spec2:"75 m²", spec3:"Floor 5/12"}},
+    {type:"office", featured:false, image:"https://picsum.photos/seed/emlak-2/700/500", price:"2 100", currency:"₼",
+      az:{title:"Biznes mərkəzində ofis", addr:"Bakı, Yasamal rayonu", spec1:"120 m²", spec2:"Açıq planlaşdırma"},
+      ru:{title:"Офис в бизнес-центре", addr:"Баку, Ясамальский район", spec1:"120 м²", spec2:"Открытая планировка"},
+      en:{title:"Office in a business center", addr:"Baku, Yasamal district", spec1:"120 m²", spec2:"Open floor plan"}},
+    {type:"house", featured:false, image:"https://picsum.photos/seed/emlak-3/700/500", price:"2 800", currency:"₼",
+      az:{title:"Şəhərkənarında həyətli ev", addr:"Mərdəkan", spec1:"4 otaq", spec2:"180 m²", spec3:"3 sot həyət"},
+      ru:{title:"Дом с двором в пригороде", addr:"Мардакян", spec1:"4 комнаты", spec2:"180 м²", spec3:"Двор 3 сот."},
+      en:{title:"House with a yard on the outskirts", addr:"Mardakan", spec1:"4 rooms", spec2:"180 m²", spec3:"3-sot yard"}},
+    {type:"apartment", featured:false, image:"https://picsum.photos/seed/emlak-4/700/500", price:"650", currency:"₼",
+      az:{title:"Metroya yaxın studiya", addr:"Bakı, 28 May metro stansiyası", spec1:"Studiya", spec2:"38 m²"},
+      ru:{title:"Студия рядом с метро", addr:"Баку, ст. м. 28 Мая", spec1:"Студия", spec2:"38 м²"},
+      en:{title:"Studio near the metro", addr:"Baku, 28 May metro station", spec1:"Studio", spec2:"38 m²"}},
+    {type:"office", featured:false, image:"https://picsum.photos/seed/emlak-5/700/500", price:"980", currency:"₼",
+      az:{title:"6 nəfərədək komanda üçün kompakt ofis", addr:"Bakı, Xətai rayonu", spec1:"45 m²", spec2:"2 kabinet"},
+      ru:{title:"Компактный офис для команды до 6 человек", addr:"Баку, Хатаинский район", spec1:"45 м²", spec2:"2 кабинета"},
+      en:{title:"Compact office for a team of up to 6", addr:"Baku, Khatai district", spec1:"45 m²", spec2:"2 rooms"}},
+    {type:"apartment", featured:false, image:"https://picsum.photos/seed/emlak-6/700/500", price:"1 900", currency:"₼",
+      az:{title:"Geniş, təmirli mənzil", addr:"Bakı, Nəsimi rayonu", spec1:"3 otaq", spec2:"110 m²", spec3:"9/16 mərtəbə"},
+      ru:{title:"Просторная квартира с ремонтом", addr:"Баку, Насиминский район", spec1:"3 комнаты", spec2:"110 м²", spec3:"9/16 этаж"},
+      en:{title:"Spacious renovated apartment", addr:"Baku, Nasimi district", spec1:"3 rooms", spec2:"110 m²", spec3:"Floor 9/16"}}
+  ];
+
+  function escapeHtml(str){
+    if(str === undefined || str === null) return '';
+    return String(str).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+  }
+
+  function renderListings(){
+    const grid = document.getElementById('listingsGrid');
+    if(!grid) return;
+    const list = (siteContent && Array.isArray(siteContent.listings) && siteContent.listings.length) ? siteContent.listings : fallbackListings;
+    const priceUnit = translations[currentLang]['hero.price_unit'] || '';
+    grid.innerHTML = list.map((item, idx) => {
+      const t = item[currentLang] || item.az || {};
+      const tag = translations[currentLang]['tag.' + item.type] || item.type;
+      const specs = [t.spec1, t.spec2, t.spec3].filter(Boolean)
+        .map(s => `<span>${escapeHtml(s)}</span>`).join('');
+      const note = t.note ? `<div class="listing-note">${escapeHtml(t.note)}</div>` : '';
+      const gallery = Array.isArray(item.gallery) && item.gallery.length > 1
+        ? `<div class="gallery-dots">${item.gallery.map((src, gi) =>
+            `<img src="${escapeHtml(src)}" class="gallery-thumb${gi === 0 ? ' active' : ''}" alt="" onclick="const card=this.closest('.listing-card'); card.querySelector('.photo img').src=this.src; card.querySelectorAll('.gallery-thumb').forEach(t=>t.classList.remove('active')); this.classList.add('active');">`
+          ).join('')}</div>`
+        : '';
+      return `<article class="listing-card${item.featured ? ' featured' : ''}" data-type="${escapeHtml(item.type)}">
+        <div class="photo">
+          <span class="tag">${escapeHtml(tag)}</span>
+          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(t.title)}">
+        </div>
+        <div class="listing-body">
+          <div class="price">${escapeHtml(item.price)} ${escapeHtml(item.currency || '₼')} <span>${escapeHtml(priceUnit)}</span></div>
+          <h3>${escapeHtml(t.title)}</h3>
+          <div class="addr">${escapeHtml(t.addr)}</div>
+          <div class="specs">${specs}</div>
+          ${note}
+          ${gallery}
+        </div>
+      </article>`;
+    }).join('');
+    applyListingFilter(currentFilter);
+  }
+
+  function applyListingFilter(filter){
+    currentFilter = filter;
+    document.querySelectorAll('#listingsGrid .listing-card').forEach(card => {
+      card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+    });
+  }
+
+  function applyContactAndImages(){
+    const c = (siteContent && siteContent.contact) || fallbackContact;
+    const img = (siteContent && siteContent.images) || fallbackImages;
+
+    document.querySelectorAll('[data-content="phone-href"]').forEach(el => {
+      el.setAttribute('href', 'tel:' + String(c.phone).replace(/[^0-9+]/g, ''));
+      el.textContent = c.phone;
+    });
+    document.querySelectorAll('[data-content="phone-link"]').forEach(el => {
+      el.setAttribute('href', 'tel:' + String(c.phone).replace(/[^0-9+]/g, ''));
+      el.textContent = c.phone;
+    });
+    document.querySelectorAll('[data-content="email-link"]').forEach(el => {
+      el.setAttribute('href', 'mailto:' + c.email);
+      el.textContent = c.email;
+    });
+    document.querySelectorAll('[data-content="instagram-link"]').forEach(el => el.setAttribute('href', c.instagram));
+    document.querySelectorAll('[data-content="tiktok-link"]').forEach(el => el.setAttribute('href', c.tiktok));
+    document.querySelectorAll('[data-content="telegram-link"]').forEach(el => el.setAttribute('href', c.telegram));
+    document.querySelectorAll('[data-content="instagram-footer"]').forEach(el => {
+      el.setAttribute('href', c.instagram);
+      el.textContent = 'Instagram — ' + (c.instagramHandle || c.instagram);
+    });
+    document.querySelectorAll('[data-content="tiktok-footer"]').forEach(el => {
+      el.setAttribute('href', c.tiktok);
+      el.textContent = 'TikTok — ' + (c.tiktokHandle || c.tiktok);
+    });
+    document.querySelectorAll('[data-content="telegram-footer"]').forEach(el => {
+      el.setAttribute('href', c.telegram);
+      el.textContent = 'Telegram — ' + (c.telegramHandle || c.telegram);
+    });
+    document.querySelectorAll('[data-content="hero-image"]').forEach(el => el.setAttribute('src', img.hero));
+    document.querySelectorAll('[data-content="about-image"]').forEach(el => el.setAttribute('src', img.about));
+
+    // Синхронизируем email в форме заявки (кнопка "Отправить")
+    window.__contactEmail = c.email;
+  }
+
+  function applyLang(lang){
+    const dict = translations[lang];
+    if(!dict) return;
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.title = dict.meta_title;
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if(dict[key] !== undefined) el.textContent = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if(dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if(dict[key] !== undefined) el.setAttribute('alt', dict[key]);
+    });
+    document.querySelectorAll('[data-i18n-content]').forEach(el => {
+      const key = el.getAttribute('data-i18n-content');
+      if(dict[key] !== undefined) el.setAttribute('content', dict[key]);
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    renderListings();
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+
+  // Мобильное меню
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '68px';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = '#FAF7F1';
+    navLinks.style.padding = '20px 32px';
+    navLinks.style.gap = '18px';
+    navLinks.style.borderBottom = '1px solid var(--line)';
+  });
+
+  // Фильтр объектов (кнопки существуют всегда, карточки перерисовываются — поэтому ищем их заново)
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyListingFilter(btn.dataset.filter);
+    });
+  });
+
+  // Форма -> mailto (нужно заменить на реальный обработчик при подключении backend)
+  function sendForm(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const type = document.getElementById('type').value;
+    const message = document.getElementById('message').value;
+    const body = encodeURIComponent(`${name} / ${phone} / ${type}\n${message}`);
+    const email = window.__contactEmail || 'info@emlak.arenda';
+    window.location.href = `mailto:${email}?subject=Website request&body=${body}`;
+    return false;
+  }
+
+  // ============ Загрузка content.json (данные, которые редактируются через /admin) ============
+  function boot(){
+    applyContactAndImages();
+    applyLang(currentLang);
+  }
+
+  fetch('content.json', {cache: 'no-store'})
+    .then(r => { if(!r.ok) throw new Error('no content.json'); return r.json(); })
+    .then(data => {
+      siteContent = data;
+      if(data.translations){
+        ['az','ru','en'].forEach(lang => {
+          if(data.translations[lang]) Object.assign(translations[lang], data.translations[lang]);
+        });
+      }
+      boot();
+    })
+    .catch(() => {
+      // content.json недоступен (например, открыт файл локально, без сервера) — работаем на резервных данных
+      boot();
+    });
+</script>
+
+
+<!-- Нужно для входа в панель управления /admin (приглашение по email вернёт пользователя сюда) -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
