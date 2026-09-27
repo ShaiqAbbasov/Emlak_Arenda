@@ -1,34 +1,157 @@
-Emlak Arenda
-AZRUEN
-+994773107262  WhatsApp
-Azadlıq m. • Süleyman Sani Axundov 42
-Kirayə və satış üçün ən yaxşı mənzillər Bakıda
-Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir - təsdiqdən sonra çıxacaq.
-HamısıKirayəSatışOtaq123Axtar
-🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə - moderasiyadan sonra.
-Əlaqə və ünvan
-Süleyman Sani Axundov 42, Azadlıq m., Bakı
-Zəng: +994 77 3107262IGTTTG
-Instagram, TikTok, Telegram: m_emlak_arenda / emlak_arenda
-+ Öz elanını yerləşdir
-Son elanlar
-Admin panel
-Öz elanını əlavə et
-KirayəSatışGöndərBağla
-Admin - Emlak Arenda
-SaytÇıxış
-Giriş
-Parol: admin123
-Giriş
-ElanlarGözləyən (0)Nömrə / SosialGoogle SEO
-Elanlar
-+ Yeni
-Təsdiq gözləyən
-Nömrə və ünvan
-TelefonÜnvanWhatsApp linkInstagramTikTokTelegramYadda saxla
-Google üçün
-1. Google Search Console: https://search.google.com/search-console
-2. Add property -> emlakarenda.netlify.app
-3. Sitemap: https://emlakarenda.netlify.app/sitemap.xml
-4. Netlify > Domain management > Add custom domain əlavə et
-Sayt artıq mobil üçün sürətli, meta teqlər var, Google 1-2 günə index edəcək.
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emlak Arenda Baku | Kirayə və Satış - Süleyman Sani Axundov 42, Azadlıq m.</title>
+<meta name="description" content="Bakı Azadlıq metrosu, Süleyman Sani Axundov 42. Mənzillərin kirayəsi və satışı. Ən yaxşı qiymətlərlə. Emlak Arenda - m_emlak_arenda">
+<meta name="keywords" content="emlak, kiraye, satish, Baku, Azadliq, menzil, arenda Baku, emlakarenda">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Emlak Arenda - Bakı">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Emlak Arenda","address":{"@type":"PostalAddress","streetAddress":"Süleyman Sani Axundov 42","addressLocality":"Baku","addressCountry":"AZ"}}</script>
+<style>
+:root{--p:#0f6cf9;--p2:#0a4fc1;--bg:#f6f8fb;--card:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1240px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:22px}.logo span{color:var(--p)}
+.langs{display:flex;gap:6px;background:#eef2ff;padding:4px;border-radius:999px}
+.langs button{border:0;background:transparent;padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:600;font-size:13px}
+.langs button.active{background:var(--p);color:#fff}
+.btn{border:0;cursor:pointer;border-radius:12px;padding:12px 18px;font-weight:700}
+.btn-p{background:var(--p);color:#fff}.btn-g{background:#111827;color:#fff}.btn-o{background:#fff;border:1px solid var(--border)}
+.badge{background:#e0f2fe;color:#075985;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.hero{padding:30px 0;display:grid;grid-template-columns:1.2fr.8fr;gap:20px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.hero-card{background:var(--card);border-radius:24px;padding:24px;border:1px solid var(--border)}
+.h1{font-size:34px;line-height:1.1;font-weight:900;margin-bottom:12px}
+.muted{color:var(--muted)}
+.search-box{background:var(--card);border-radius:20px;padding:16px;border:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:16px}
+@media(max-width:700px){.search-box{grid-template-columns:1fr 1fr}}
+.input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#fff}
+.grid{padding:20px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{border-radius:20px;overflow:hidden;background:var(--card);border:1px solid var(--border)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:14px}.price{font-weight:900;font-size:19px}
+.addr{font-size:13px;color:var(--muted);margin:4px 0}
+.meta span{background:var(--bg);padding:4px 8px;border-radius:999px;font-size:12px;border:1px solid var(--border)}
+.admin{position:fixed;inset:0;background:#f9fafb;z-index:100;overflow:auto;display:none;padding:20px}
+.admin.active{display:block}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{padding:9px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;cursor:pointer}
+.tabs button.active{background:var(--p);color:#fff}
+.panel{background:#fff;border-radius:18px;border:1px solid var(--border);padding:18px;margin-bottom:18px}
+.list{display:grid;gap:10px}
+.item{border:1px solid var(--border);border-radius:12px;padding:12px;display:flex;gap:12px;align-items:center}
+.item img{width:80px;height:60px;object-fit:cover;border-radius:8px}
+.socials{display:flex;gap:8px}
+.socials a{width:36px;height:36px;display:grid;place-items:center;background:#111827;color:#fff;border-radius:8px;font-weight:800;font-size:13px}
+.notice{background:#fffbeb;border:1px solid #fde68a;padding:10px 14px;border-radius:12px;font-size:13px;margin-top:10px}
+</style>
+</head>
+<body>
+<header><div class="container topbar">
+<div class="logo"><span>Emlak</span> Arenda</div>
+<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+<div class="langs"><button data-lang="az" class="active">AZ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button></div>
+<div><span id="headerPhone">+994 55 000 00 00</span> <a id="waLink" class="btn btn-p" style="padding:7px 12px;font-size:12px" target="_blank">WhatsApp</a></div>
+</div></div></header>
+
+<div class="container">
+<div class="hero">
+<div class="hero-card">
+<div class="badge" data-i18n="badge">Azadlıq m. • Süleyman Sani Axundov 42</div>
+<h1 class="h1" data-i18n="h1">Kirayə və satış üçün ən yaxşı mənzillər Bakıda</h1>
+<p class="muted" data-i18n="hdesc">Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir - təsdiqdən sonra çıxacaq.</p>
+<div class="search-box">
+<select id="fType"><option value="">Hamısı</option><option value="kiraye">Kirayə</option><option value="satis">Satış</option></select>
+<select id="fRooms"><option value="">Otaq</option><option>1</option><option>2</option><option>3</option></select>
+<input id="fPrice" class="input" placeholder="Max AZN">
+<button class="btn btn-g" onclick="render()">Axtar</button>
+</div>
+<div class="notice" data-i18n="notice">🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə - moderasiyadan sonra.</div>
+</div>
+<div class="hero-card">
+<h3 data-i18n="contactTitle">Əlaqə və ünvan</h3>
+<p id="addrText" style="margin:10px 0;font-weight:600">Süleyman Sani Axundov 42, Azadlıq m., Bakı</p>
+<a id="phoneBtn" class="btn btn-p" style="display:block;text-align:center">Zəng: <span id="phoneText">+994 55 000 00 00</span></a>
+<div class="socials" style="margin:12px 0">
+<a id="igLink" target="_blank">IG</a><a id="ttLink" target="_blank">TT</a><a id="tgLink" target="_blank">TG</a>
+</div>
+<p class="muted" style="font-size:12px">Instagram, TikTok, Telegram: m_emlak_arenda / emlak_arenda</p>
+<button class="btn btn-o" style="width:100%;margin-top:10px" onclick="openClientForm()" data-i18n="addAd">+ Öz elanını yerləşdir</button>
+</div>
+</div>
+<h2 data-i18n="listTitle">Son elanlar</h2>
+<div id="grid" class="grid"></div>
+<div style="text-align:center;padding:20px"><button class="btn btn-o" onclick="location.hash='admin'" data-i18n="adminBtn">Admin panel</button></div>
+</div>
+
+<div id="clientModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:80;align-items:center;justify-content:center;padding:16px">
+<div style="background:#fff;max-width:520px;width:100%;border-radius:18px;padding:18px">
+<h3 data-i18n="clientFormTitle">Öz elanını əlavə et</h3>
+<div style="display:grid;gap:8px;margin-top:10px">
+<input id="cTitle" class="input" placeholder="Başlıq - 2 otaqlı Azadlıq">
+<select id="cType"><option value="kiraye">Kirayə</option><option value="satis">Satış</option></select>
+<input id="cPrice" class="input" type="number" placeholder="Qiymət AZN">
+<input id="cRooms" class="input" placeholder="Otaq, m²">
+<input id="cAddr" class="input" placeholder="Ünvan">
+<input id="cPhone" class="input" placeholder="Telefon">
+<input id="cImages" class="input" placeholder="Şəkil linki https://...">
+<textarea id="cDesc" placeholder="Əlavə məlumat"></textarea>
+<div style="display:flex;gap:8px"><button class="btn btn-p" style="flex:1" onclick="submitClientAd()" data-i18n="sendMod">Göndər</button><button class="btn btn-o" onclick="closeClientForm()">Bağla</button></div>
+</div></div></div>
+
+<div id="adminPanel" class="admin">
+<div class="container">
+<div style="display:flex;justify-content:space-between"><h2>Admin - Emlak Arenda</h2><div><button class="btn btn-o" onclick="location.hash=''">Sayt</button> <button class="btn btn-g" onclick="logout()">Çıxış</button></div></div>
+<div id="loginBox" class="panel" style="max-width:400px;margin:50px auto"><h3>Giriş</h3><p class="muted" style="font-size:12px">Parol: admin123</p><input id="adminPass" type="password" class="input" placeholder="Parol" style="margin-top:8px"><button class="btn btn-p" style="width:100%;margin-top:8px" onclick="login()">Giriş</button></div>
+<div id="adminContent" style="display:none">
+<div class="tabs"><button data-tab="listings" class="active" onclick="switchTab('listings')">Elanlar</button><button data-tab="moder" onclick="switchTab('moder')">Gözləyən (<span id="moderCount">0</span>)</button><button data-tab="settings" onclick="switchTab('settings')">Nömrə / Sosial</button><button data-tab="seo" onclick="switchTab('seo')">Google SEO</button></div>
+<div id="tab-listings" class="panel"><div style="display:flex;justify-content:space-between"><h3>Elanlar</h3><button class="btn btn-p" onclick="openClientForm()">+ Yeni</button></div><div id="adminList" class="list" style="margin-top:10px"></div></div>
+<div id="tab-moder" class="panel" style="display:none"><h3>Təsdiq gözləyən</h3><div id="moderList" class="list" style="margin-top:10px"></div></div>
+<div id="tab-settings" class="panel" style="display:none"><h3>Nömrə və ünvan</h3><div style="display:grid;gap:10px;max-width:500px;margin-top:10px">
+<label>Telefon<input id="setPhone" class="input"></label>
+<label>Ünvan<input id="setAddr" class="input" value="Süleyman Sani Axundov 42, Azadlıq m., Bakı"></label>
+<label>WhatsApp link<input id="setWa" class="input" placeholder="https://wa.me/994..."></label>
+<label>Instagram<input id="setIg" class="input"></label>
+<label>TikTok<input id="setTt" class="input"></label>
+<label>Telegram<input id="setTg" class="input"></label>
+<button class="btn btn-p" onclick="saveSettings()">Yadda saxla</button></div></div>
+<div id="tab-seo" class="panel" style="display:none"><h3>Google üçün</h3><p>1. Google Search Console: https://search.google.com/search-console</p><p>2. Add property -> emlakarenda.netlify.app</p><p>3. Sitemap: https://emlakarenda.netlify.app/sitemap.xml</p><p>4. Netlify > Domain management > Add custom domain əlavə et</p><p class="notice">Sayt artıq mobil üçün sürətli, meta teqlər var, Google 1-2 günə index edəcək.</p></div>
+</div></div></div>
+
+<script>
+const TRANSLATIONS={az:{badge:"Azadlıq m. • Süleyman Sani Axundov 42",h1:"Kirayə və satış üçün ən yaxşı mənzillər Bakıda",hdesc:"Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir.",notice:"🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə.",contactTitle:"Əlaqə və ünvan",addAd:"+ Öz elanını yerləşdir",listTitle:"Son elanlar",adminBtn:"Admin panel",clientFormTitle:"Öz elanını əlavə et",sendMod:"Göndər"},
+ru:{badge:"м. Азадлыг • Сулейман Сани Ахундов 42",h1:"Лучшие квартиры для аренды и продажи в Баку",hdesc:"Напрямую от хозяина. Новые объявления каждый день.",notice:"🔥 Сегодня 12 новых объявлений.",contactTitle:"Контакты и адрес",addAd:"+ Добавить объявление",listTitle:"Последние объявления",adminBtn:"Админка",clientFormTitle:"Добавить объявление",sendMod:"Отправить"},
+en:{badge:"Azadliq m. • Suleyman Sani Akhundov 42",h1:"Best apartments for rent and sale in Baku",hdesc:"Direct from owner. New listings daily.",notice:"🔥 12 new listings today.",contactTitle:"Contact",addAd:"+ Add listing",listTitle:"Latest",adminBtn:"Admin",clientFormTitle:"Add listing",sendMod:"Send"}};
+let currentLang=localStorage.getItem('lang')||'az';
+const defaultListings=[{id:1,title:"2 otaqlı - Azadlıq m.",type:"kiraye",price:650,rooms:"2 otaq • 65 m²",addr:"S.S.Axundov 42",img:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600",phone:"+994 55 000 00 00",desc:"Kupça"},{id:2,title:"3 otaqlı - Yasamal",type:"satis",price:135000,rooms:"3 otaq • 95 m²",addr:"Yeni Yasamal",img:"https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600",phone:"+994 55 000 00 00",desc:"Ipoteka"},{id:3,title:"1 otaqlı - 8 mkr",type:"kiraye",price:400,rooms:"1 otaq",addr:"8-ci mkr",img:"https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600",phone:"+994 55 000 00 00",desc:"Əşyalı"}];
+function getSettings(){return JSON.parse(localStorage.getItem('emlak_settings')||'{}')}
+function getListings(){let l=JSON.parse(localStorage.getItem('emlak_listings')||'null');if(!l){l=defaultListings;localStorage.setItem('emlak_listings',JSON.stringify(l))}return l}
+function getModer(){return JSON.parse(localStorage.getItem('emlak_moder')||'[]')}
+function setLang(lang){currentLang=lang;localStorage.setItem('lang',lang);document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));Object.keys(TRANSLATIONS[lang]||{}).forEach(k=>{document.querySelectorAll(`[data-i18n="${k}"]`).forEach(el=>el.textContent=TRANSLATIONS[lang][k])})}
+document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+function render(){const listings=getListings();const type=document.getElementById('fType').value;const price=parseInt(document.getElementById('fPrice').value)||Infinity;const grid=document.getElementById('grid');let filtered=listings.filter(l=>{if(type&&l.type!==type)return false;if(l.price>price)return false;return true});grid.innerHTML=filtered.map(l=>`<div class="card"><img src="${l.img}"><div class="card-body"><div style="display:flex;justify-content:space-between"><span class="badge">${l.type==='kiraye'?'Kirayə':'Satış'}</span><span class="price">${l.price} AZN</span></div><div style="font-weight:700;margin-top:6px">${l.title}</div><div class="addr">${l.addr} • ${l.rooms}</div><div style="margin-top:8px;display:flex;gap:6px"><a class="btn btn-p" style="flex:1;text-align:center;padding:8px" href="tel:${l.phone}">Zəng</a><a class="btn btn-o" style="flex:1;text-align:center;padding:8px" target="_blank" href="https://wa.me/${l.phone.replace(/[^0-9]/g,'')}">WA</a></div></div></div>`).join('');renderAdminList();document.getElementById('moderCount').textContent=getModer().length;applySettingsToUI()}
+function applySettingsToUI(){const s=getSettings();const phone=s.phone||"+994 55 000 00 00";const addr=s.addr||"Süleyman Sani Axundov 42, Azadlıq m., Bakı";const wa=s.wa||"https://wa.me/994550000000";const ig=s.ig||"https://instagram.com/emlak_arenda";const tt=s.tt||"https://tiktok.com/@emlak_arenda";const tg=s.tg||"https://t.me/emlak_arenda";document.getElementById('headerPhone').textContent=phone;document.getElementById('phoneText').textContent=phone;document.getElementById('phoneBtn').href="tel:"+phone;document.getElementById('addrText').textContent=addr;document.getElementById('waLink').href=wa;document.getElementById('igLink').href=ig;document.getElementById('ttLink').href=tt;document.getElementById('tgLink').href=tg;if(document.getElementById('setPhone')){document.getElementById('setPhone').value=phone;document.getElementById('setAddr').value=addr;document.getElementById('setWa').value=wa;document.getElementById('setIg').value=ig;document.getElementById('setTt').value=tt;document.getElementById('setTg').value=tg}}
+function openClientForm(){document.getElementById('clientModal').style.display='flex'}function closeClientForm(){document.getElementById('clientModal').style.display='none'}
+function submitClientAd(){const title=document.getElementById('cTitle').value||"Elan";const type=document.getElementById('cType').value;const price=parseInt(document.getElementById('cPrice').value)||0;const rooms=document.getElementById('cRooms').value;const addr=document.getElementById('cAddr').value;const phone=document.getElementById('cPhone').value;const img=document.getElementById('cImages').value||"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600";const desc=document.getElementById('cDesc').value;if(!price||!phone){alert("Qiymət və telefon vacibdir");return}const moder=getModer();moder.push({id:Date.now(),title,type,price,rooms,addr,phone,img,desc});localStorage.setItem('emlak_moder',JSON.stringify(moder));closeClientForm();alert("Göndərildi! Admin təsdiqləyəcək.");render()}
+function renderAdminList(){const listings=getListings();document.getElementById('adminList').innerHTML=listings.map(l=>`<div class="item"><img src="${l.img}"><div style="flex:1"><b>${l.title}</b><br><span class="muted" style="font-size:11px">${l.price} AZN</span></div><button class="btn btn-o" style="padding:6px 10px" onclick="deleteListing(${l.id})">Sil</button></div>`).join('');const moder=getModer();document.getElementById('moderList').innerHTML=moder.length?moder.map(m=>`<div class="item"><img src="${m.img}"><div style="flex:1"><b>${m.title}</b><br><span class="muted">${m.price} AZN • ${m.phone}</span></div><div style="display:flex;gap:4px"><button class="btn btn-p" style="padding:6px 10px" onclick="approve(${m.id})">Təsdiq</button><button class="btn btn-o" style="padding:6px 10px" onclick="reject(${m.id})">X</button></div></div>`).join(''):'<p class="muted">Yoxdur</p>'}
+function deleteListing(id){if(!confirm("Sil?"))return;let l=getListings().filter(x=>x.id!==id);localStorage.setItem('emlak_listings',JSON.stringify(l));render()}
+function approve(id){let moder=getModer();let item=moder.find(x=>x.id===id);if(!item)return;let listings=getListings();listings.unshift(item);localStorage.setItem('emlak_listings',JSON.stringify(listings));localStorage.setItem('emlak_moder',JSON.stringify(moder.filter(x=>x.id!==id)));render()}
+function reject(id){let moder=getModer().filter(x=>x.id!==id);localStorage.setItem('emlak_moder',JSON.stringify(moder));render()}
+function saveSettings(){const s={phone:document.getElementById('setPhone').value,addr:document.getElementById('setAddr').value,wa:document.getElementById('setWa').value,ig:document.getElementById('setIg').value,tt:document.getElementById('setTt').value,tg:document.getElementById('setTg').value};localStorage.setItem('emlak_settings',JSON.stringify(s));alert("Saxlanıldı!");applySettingsToUI()}
+function switchTab(t){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));document.getElementById('tab-listings').style.display=t==='listings'?'block':'none';document.getElementById('tab-moder').style.display=t==='moder'?'block':'none';document.getElementById('tab-settings').style.display=t==='settings'?'block':'none';document.getElementById('tab-seo').style.display=t==='seo'?'block':'none'}
+function checkHash(){if(location.hash==='#admin')document.getElementById('adminPanel').classList.add('active');else document.getElementById('adminPanel').classList.remove('active')}
+window.addEventListener('hashchange',checkHash);
+function login(){if(document.getElementById('adminPass').value==='admin123'){localStorage.setItem('admin_ok','1');document.getElementById('loginBox').style.display='none';document.getElementById('adminContent').style.display='block';renderAdminList()}else alert("Səhv parol")}
+function logout(){localStorage.removeItem('admin_ok');document.getElementById('loginBox').style.display='block';document.getElementById('adminContent').style.display='none'}
+(function init(){if(localStorage.getItem('admin_ok')==='1'){document.getElementById('loginBox').style.display='none';document.getElementById('adminContent').style.display='block'}setLang(currentLang);render();checkHash()})();
+</script>
+</body>
+</html>
