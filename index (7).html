@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emlak Arenda Baku | Kirayə və Satış - Süleyman Sani Axundov 42, Azadlıq m.</title>
+<meta name="description" content="Bakı, Azadlıq metrosu, Süleyman Sani Axundov 42. Mənzillərin birbaşa sahibindən kirayəsi və satışı — hər gün yeni elanlar. Emlak Arenda">
+<meta name="keywords" content="emlak, kiraye, satish, Baku, Azadliq, menzil, arenda Baku, emlakarenda">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Emlak Arenda - Bakı">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Emlak Arenda","address":{"@type":"PostalAddress","streetAddress":"Süleyman Sani Axundov 42","addressLocality":"Baku","addressCountry":"AZ"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#F4EEE3; --card:#FFFFFF; --ink:#22262c; --muted:#7c7364; --border:#e6dcc7;
+  --sea:#0b4f6c; --sea-dark:#083c53; --brass:#b8892c; --brass-light:#f4e6c5;
+  --r-lg:28px; --r-md:14px; --r-sm:10px; --r-pill:999px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Newsreader',serif;font-weight:600;letter-spacing:-.01em}
+.container{max-width:1240px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(244,238,227,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px;flex-wrap:wrap}
+.logo{font-family:'Newsreader',serif;font-weight:700;font-size:23px;color:var(--ink)}
+.logo span{color:var(--sea)}
+.langs{display:flex;gap:4px;background:#fff;border:1px solid var(--border);padding:4px;border-radius:var(--r-pill)}
+.langs button{border:0;background:transparent;padding:6px 12px;border-radius:var(--r-pill);cursor:pointer;font-weight:600;font-size:13px;color:var(--muted);font-family:inherit}
+.langs button.active{background:var(--sea);color:#fff}
+.btn{border:0;cursor:pointer;border-radius:var(--r-pill);padding:12px 18px;font-weight:600;font-family:inherit;font-size:14px}
+.btn-p{background:var(--sea);color:#fff}
+.btn-g{background:var(--ink);color:#fff}
+.btn-o{background:#fff;border:1px solid var(--border);color:var(--ink)}
+.badge{background:var(--brass-light);color:#6b4f14;padding:4px 12px;border-radius:var(--r-pill);font-size:12px;font-weight:700}
+.hero{padding:32px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.hero-card{background:var(--card);border-radius:var(--r-lg);padding:28px;border:1px solid var(--border)}
+.h1{font-size:36px;line-height:1.15;margin-bottom:14px;color:var(--ink)}
+.muted{color:var(--muted)}
+.search-box{background:var(--sand);border-radius:var(--r-md);padding:16px;border:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:18px}
+@media(max-width:700px){.search-box{grid-template-columns:1fr 1fr}}
+.input,select,textarea{width:100%;padding:12px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-family:inherit;color:var(--ink);font-size:14px}
+.grid{padding:24px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{border-radius:var(--r-md);overflow:hidden;background:var(--card);border:1px solid var(--border)}
+.card img{width:100%;height:200px;object-fit:cover;display:block;background:var(--sand)}
+.card-body{padding:16px}
+.price{font-weight:700;font-size:19px;color:var(--sea-dark);font-family:'Newsreader',serif}
+.addr{font-size:13px;color:var(--muted);margin:4px 0}
+.photocount{position:absolute;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:3px 8px;border-radius:var(--r-pill);margin:10px}
+.imgwrap{position:relative}
+.admin{position:fixed;inset:0;background:var(--sand);z-index:100;overflow:auto;display:none;padding:20px}
+.admin.active{display:block}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{padding:9px 16px;border-radius:var(--r-pill);border:1px solid var(--border);background:#fff;cursor:pointer;font-weight:600;color:var(--muted);font-family:inherit}
+.tabs button.active{background:var(--sea);color:#fff;border-color:var(--sea)}
+.panel{background:#fff;border-radius:var(--r-lg);border:1px solid var(--border);padding:20px;margin-bottom:18px}
+.list{display:grid;gap:10px}
+.item{border:1px solid var(--border);border-radius:var(--r-md);padding:12px;display:flex;gap:12px;align-items:center}
+.item img{width:80px;height:60px;object-fit:cover;border-radius:var(--r-sm);background:var(--sand)}
+.socials{display:flex;gap:8px}
+.socials a{width:36px;height:36px;display:grid;place-items:center;background:var(--ink);color:#fff;border-radius:var(--r-sm);font-weight:700;font-size:12px;text-decoration:none}
+.notice{background:var(--brass-light);border:1px solid #e9cf8f;padding:10px 14px;border-radius:var(--r-sm);font-size:13px;margin-top:12px;color:#6b4f14}
+.img-upload{border:2px dashed var(--border);border-radius:var(--r-md);padding:18px;text-align:center;cursor:pointer;background:var(--sand);display:block}
+.img-upload input{display:none}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumb{position:relative;width:70px;height:70px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--border)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb button{position:absolute;top:2px;right:2px;width:20px;height:20px;border-radius:50%;border:0;background:rgba(0,0,0,.65);color:#fff;font-size:12px;cursor:pointer;line-height:1;padding:0}
+.itembtns{display:flex;gap:6px}
+</style>
+</head>
+<body>
+<header><div class="container topbar">
+<div class="logo"><span>Emlak</span> Arenda</div>
+<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+<div class="langs"><button data-lang="az" class="active">AZ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button></div>
+<div><span id="headerPhone">+994 55 000 00 00</span> <a id="waLink" class="btn btn-p" style="padding:7px 12px;font-size:12px" target="_blank">WhatsApp</a></div>
+</div></div></header>
+
+<div class="container">
+<div class="hero">
+<div class="hero-card">
+<div class="badge" data-i18n="badge">Azadlıq m. • Süleyman Sani Axundov 42</div>
+<h1 class="h1" data-i18n="h1">Azadlıq metrosu ətrafında kirayə və satılıq mənzillər</h1>
+<p class="muted" data-i18n="hdesc">Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir.</p>
+<div class="search-box">
+<select id="fType"><option value="">Hamısı</option><option value="kiraye">Kirayə</option><option value="satis">Satış</option></select>
+<select id="fRooms"><option value="">Otaq</option><option>1</option><option>2</option><option>3</option></select>
+<input id="fPrice" class="input" placeholder="Max AZN">
+<button class="btn btn-g" onclick="render()">Axtar</button>
+</div>
+<div class="notice" data-i18n="notice">🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə.</div>
+</div>
+<div class="hero-card">
+<h3 data-i18n="contactTitle">Əlaqə və ünvan</h3>
+<p id="addrText" style="margin:10px 0;font-weight:600">Süleyman Sani Axundov 42, Azadlıq m., Bakı</p>
+<a id="phoneBtn" class="btn btn-p" style="display:block;text-align:center">Zəng: <span id="phoneText">+994 55 000 00 00</span></a>
+<div class="socials" style="margin:12px 0">
+<a id="igLink" target="_blank">IG</a><a id="ttLink" target="_blank">TT</a><a id="tgLink" target="_blank">TG</a>
+</div>
+<p class="muted" style="font-size:12px">Instagram, TikTok, Telegram: m_emlak_arenda / emlak_arenda</p>
+<button class="btn btn-o" style="width:100%;margin-top:10px" onclick="openClientForm('client')" data-i18n="addAd">+ Öz elanını yerləşdir</button>
+</div>
+</div>
+<h2 data-i18n="listTitle">Son elanlar</h2>
+<div id="grid" class="grid"></div>
+<div style="text-align:center;padding:20px"><button class="btn btn-o" onclick="location.hash='admin'" data-i18n="adminBtn">Admin panel</button></div>
+</div>
+
+<div id="clientModal" style="display:none;position:fixed;inset:0;background:rgba(20,16,8,.55);z-index:80;align-items:center;justify-content:center;padding:16px">
+<div style="background:#fff;max-width:520px;width:100%;border-radius:var(--r-lg);padding:20px;max-height:90vh;overflow:auto">
+<h3 id="formTitle" data-i18n="clientFormTitle">Öz elanını əlavə et</h3>
+<div style="display:grid;gap:8px;margin-top:10px">
+<input id="cTitle" class="input" placeholder="Başlıq - 2 otaqlı Azadlıq">
+<select id="cType"><option value="kiraye">Kirayə</option><option value="satis">Satış</option></select>
+<input id="cPrice" class="input" type="number" placeholder="Qiymət AZN">
+<input id="cRooms" class="input" placeholder="Otaq, m²">
+<input id="cAddr" class="input" placeholder="Ünvan">
+<input id="cPhone" class="input" placeholder="Telefon">
+<textarea id="cDesc" placeholder="Əlavə məlumat"></textarea>
+
+<label class="img-upload">
+  <input type="file" id="cImageFile" accept="image/*" multiple onchange="handleImageFiles(this.files); this.value=''">
+  📷 Telefondan şəkil seç (kamera və ya qalereya) — maks. 8
+</label>
+<div id="imgPreview" class="thumbs"></div>
+<div style="display:flex;gap:6px;margin-top:2px">
+<input id="cImageUrl" class="input" placeholder="və ya şəkil linki əlavə et (https://...)">
+<button class="btn btn-o" type="button" onclick="addUrlImage()">Əlavə et</button>
+</div>
+
+<div style="display:flex;gap:8px;margin-top:6px"><button class="btn btn-p" style="flex:1" onclick="saveAd()" data-i18n="sendMod">Göndər</button><button class="btn btn-o" onclick="closeClientForm()">Bağla</button></div>
+</div></div></div>
+
+<div id="adminPanel" class="admin">
+<div class="container">
+<div style="display:flex;justify-content:space-between"><h2>Admin - Emlak Arenda</h2><div><button class="btn btn-o" onclick="location.hash=''">Sayt</button> <button class="btn btn-g" onclick="logout()">Çıxış</button></div></div>
+<div id="loginBox" class="panel" style="max-width:400px;margin:50px auto">
+<h3>Giriş</h3>
+<input id="adminPass" type="password" class="input" placeholder="Parolu daxil edin" style="margin-top:12px" onkeydown="if(event.key==='Enter')login()">
+<button class="btn btn-p" style="width:100%;margin-top:8px" onclick="login()">Giriş</button>
+</div>
+<div id="adminContent" style="display:none">
+<div class="tabs"><button data-tab="listings" class="active" onclick="switchTab('listings')">Elanlar</button><button data-tab="moder" onclick="switchTab('moder')">Gözləyən (<span id="moderCount">0</span>)</button><button data-tab="settings" onclick="switchTab('settings')">Nömrə / Sosial</button><button data-tab="seo" onclick="switchTab('seo')">Google SEO</button></div>
+<div id="tab-listings" class="panel"><div style="display:flex;justify-content:space-between"><h3>Elanlar</h3><button class="btn btn-p" onclick="openClientForm('admin')">+ Yeni</button></div><div id="adminList" class="list" style="margin-top:10px"></div></div>
+<div id="tab-moder" class="panel" style="display:none"><h3>Təsdiq gözləyən</h3><div id="moderList" class="list" style="margin-top:10px"></div></div>
+<div id="tab-settings" class="panel" style="display:none"><h3>Nömrə və ünvan</h3><div style="display:grid;gap:10px;max-width:500px;margin-top:10px">
+<label>Telefon<input id="setPhone" class="input"></label>
+<label>Ünvan<input id="setAddr" class="input" value="Süleyman Sani Axundov 42, Azadlıq m., Bakı"></label>
+<label>WhatsApp link<input id="setWa" class="input" placeholder="https://wa.me/994..."></label>
+<label>Instagram<input id="setIg" class="input"></label>
+<label>TikTok<input id="setTt" class="input"></label>
+<label>Telegram<input id="setTg" class="input"></label>
+<hr style="border:0;border-top:1px solid var(--border);margin:6px 0">
+<label>Admin parolunu dəyişmək üçün yeni parol yazın (boş saxlasanız, köhnə parol qalır)<input id="setPass" type="password" class="input" placeholder="Yeni parol"></label>
+<button class="btn btn-p" onclick="saveSettings()">Yadda saxla</button></div></div>
+<div id="tab-seo" class="panel" style="display:none"><h3>Google üçün</h3><p>1. Google Search Console: https://search.google.com/search-console</p><p>2. Add property -> emlakarenda.netlify.app</p><p>3. Sitemap: https://emlakarenda.netlify.app/sitemap.xml</p><p>4. Netlify > Domain management > Add custom domain əlavə et</p><p class="notice">Sayt artıq mobil üçün sürətli, meta teqlər var, Google 1-2 günə index edəcək.</p></div>
+</div></div></div>
+
+<script>
+const TRANSLATIONS={az:{badge:"Azadlıq m. • Süleyman Sani Axundov 42",h1:"Azadlıq metrosu ətrafında kirayə və satılıq mənzillər",hdesc:"Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir.",notice:"🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə.",contactTitle:"Əlaqə və ünvan",addAd:"+ Öz elanını yerləşdir",listTitle:"Son elanlar",adminBtn:"Admin panel",clientFormTitle:"Öz elanını əlavə et",sendMod:"Göndər"},
+ru:{badge:"м. Азадлыг • Сулейман Сани Ахундов 42",h1:"Квартиры в аренду и на продажу возле метро Azadlıq",hdesc:"Напрямую от хозяина. Новые объявления каждый день.",notice:"🔥 Сегодня 12 новых объявлений.",contactTitle:"Контакты и адрес",addAd:"+ Добавить объявление",listTitle:"Последние объявления",adminBtn:"Админка",clientFormTitle:"Добавить объявление",sendMod:"Отправить"},
+en:{badge:"Azadliq m. • Suleyman Sani Akhundov 42",h1:"Apartments for rent and sale near Azadliq metro, Baku",hdesc:"Direct from owner. New listings daily.",notice:"🔥 12 new listings today.",contactTitle:"Contact",addAd:"+ Add listing",listTitle:"Latest",adminBtn:"Admin",clientFormTitle:"Add listing",sendMod:"Send"}};
+let currentLang=localStorage.getItem('lang')||'az';
+const PLACEHOLDER_IMG="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600";
+const defaultListings=[
+{id:1,title:"2 otaqlı - Azadlıq m.",type:"kiraye",price:650,rooms:"2 otaq • 65 m²",addr:"S.S.Axundov 42",images:["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600"],phone:"+994 55 000 00 00",desc:"Kupça"},
+{id:2,title:"3 otaqlı - Yasamal",type:"satis",price:135000,rooms:"3 otaq • 95 m²",addr:"Yeni Yasamal",images:["https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600"],phone:"+994 55 000 00 00",desc:"Ipoteka"},
+{id:3,title:"1 otaqlı - 8 mkr",type:"kiraye",price:400,rooms:"1 otaq",addr:"8-ci mkr",images:["https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600"],phone:"+994 55 000 00 00",desc:"Əşyalı"}];
+
+function getSettings(){return JSON.parse(localStorage.getItem('emlak_settings')||'{}')}
+function getListings(){let l=JSON.parse(localStorage.getItem('emlak_listings')||'null');if(!l){l=defaultListings;localStorage.setItem('emlak_listings',JSON.stringify(l))}
+  // köhnə formatı (tək 'img') yeni formata ('images' massivi) köçür
+  l=l.map(x=>x.images?x:{...x,images:x.img?[x.img]:[PLACEHOLDER_IMG]});
+  return l}
+function getModer(){let m=JSON.parse(localStorage.getItem('emlak_moder')||'[]');return m.map(x=>x.images?x:{...x,images:x.img?[x.img]:[PLACEHOLDER_IMG]})}
+
+function setLang(lang){currentLang=lang;localStorage.setItem('lang',lang);document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));Object.keys(TRANSLATIONS[lang]||{}).forEach(k=>{document.querySelectorAll(`[data-i18n="${k}"]`).forEach(el=>el.textContent=TRANSLATIONS[lang][k])})}
+document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+
+function render(){
+  const listings=getListings();const type=document.getElementById('fType').value;const price=parseInt(document.getElementById('fPrice').value)||Infinity;const grid=document.getElementById('grid');
+  let filtered=listings.filter(l=>{if(type&&l.type!==type)return false;if(l.price>price)return false;return true});
+  grid.innerHTML=filtered.map(l=>{
+    const cover=(l.images&&l.images[0])||PLACEHOLDER_IMG;
+    const extra=(l.images&&l.images.length>1)?`<span class="photocount">📷 ${l.images.length}</span>`:'';
+    return `<div class="card"><div class="imgwrap"><img src="${cover}">${extra}</div><div class="card-body"><div style="display:flex;justify-content:space-between"><span class="badge">${l.type==='kiraye'?'Kirayə':'Satış'}</span><span class="price">${l.price} AZN</span></div><div style="font-weight:700;margin-top:6px">${l.title}</div><div class="addr">${l.addr} • ${l.rooms}</div><div style="margin-top:8px;display:flex;gap:6px"><a class="btn btn-p" style="flex:1;text-align:center;padding:8px" href="tel:${l.phone}">Zəng</a><a class="btn btn-o" style="flex:1;text-align:center;padding:8px" target="_blank" href="https://wa.me/${l.phone.replace(/[^0-9]/g,'')}">WA</a></div></div></div>`;
+  }).join('');
+  renderAdminList();document.getElementById('moderCount').textContent=getModer().length;applySettingsToUI()
+}
+
+function applySettingsToUI(){const s=getSettings();const phone=s.phone||"+994 55 000 00 00";const addr=s.addr||"Süleyman Sani Axundov 42, Azadlıq m., Bakı";const wa=s.wa||"https://wa.me/994550000000";const ig=s.ig||"https://instagram.com/emlak_arenda";const tt=s.tt||"https://tiktok.com/@emlak_arenda";const tg=s.tg||"https://t.me/emlak_arenda";document.getElementById('headerPhone').textContent=phone;document.getElementById('phoneText').textContent=phone;document.getElementById('phoneBtn').href="tel:"+phone;document.getElementById('addrText').textContent=addr;document.getElementById('waLink').href=wa;document.getElementById('igLink').href=ig;document.getElementById('ttLink').href=tt;document.getElementById('tgLink').href=tg;if(document.getElementById('setPhone')){document.getElementById('setPhone').value=phone;document.getElementById('setAddr').value=addr;document.getElementById('setWa').value=wa;document.getElementById('setIg').value=ig;document.getElementById('setTt').value=tt;document.getElementById('setTg').value=tg}}
+
+/* ---- Elan formu: əlavə et / redaktə et, foto ilə birlikdə ---- */
+let editingId=null;      // redaktə olunan elanın id-si, yeni elan üçün null
+let editingMode='client'; // 'client' = moderasiyaya düşür, 'admin' = birbaşa saytda çıxır
+let currentAdImages=[];
+
+function openClientForm(mode,existing){
+  editingMode=mode;editingId=existing?existing.id:null;currentAdImages=existing?[...(existing.images||[])]:[];
+  document.getElementById('cTitle').value=existing?existing.title:'';
+  document.getElementById('cType').value=existing?existing.type:'kiraye';
+  document.getElementById('cPrice').value=existing?existing.price:'';
+  document.getElementById('cRooms').value=existing?existing.rooms:'';
+  document.getElementById('cAddr').value=existing?existing.addr:'';
+  document.getElementById('cPhone').value=existing?existing.phone:'';
+  document.getElementById('cDesc').value=existing?(existing.desc||''):'';
+  document.getElementById('formTitle').textContent=existing?'Elanı redaktə et':(mode==='admin'?'Yeni elan (birbaşa saytda çıxacaq)':'Öz elanını əlavə et');
+  renderImgPreview();
+  document.getElementById('clientModal').style.display='flex';
+}
+function closeClientForm(){document.getElementById('clientModal').style.display='none'}
+
+function handleImageFiles(files){
+  [...files].forEach(file=>{
+    if(currentAdImages.length>=8){alert('Maksimum 8 şəkil əlavə edə bilərsiniz');return}
+    const reader=new FileReader();
+    reader.onload=e=>{currentAdImages.push(e.target.result);renderImgPreview()};
+    reader.readAsDataURL(file);
+  });
+}
+function addUrlImage(){
+  const inp=document.getElementById('cImageUrl');const url=inp.value.trim();
+  if(url){if(currentAdImages.length>=8){alert('Maksimum 8 şəkil');return}currentAdImages.push(url);inp.value='';renderImgPreview()}
+}
+function removeAdImage(i){currentAdImages.splice(i,1);renderImgPreview()}
+function renderImgPreview(){
+  const box=document.getElementById('imgPreview');
+  box.innerHTML=currentAdImages.length?currentAdImages.map((src,i)=>`<div class="thumb"><img src="${src}"><button type="button" onclick="removeAdImage(${i})">×</button></div>`).join(''):'<p class="muted" style="font-size:12px">Hələ şəkil əlavə edilməyib</p>';
+}
+
+function saveAd(){
+  const title=document.getElementById('cTitle').value||"Elan";
+  const type=document.getElementById('cType').value;
+  const price=parseInt(document.getElementById('cPrice').value)||0;
+  const rooms=document.getElementById('cRooms').value;
+  const addr=document.getElementById('cAddr').value;
+  const phone=document.getElementById('cPhone').value;
+  const desc=document.getElementById('cDesc').value;
+  if(!price||!phone){alert("Qiymət və telefon vacibdir");return}
+  const images=currentAdImages.length?currentAdImages:[PLACEHOLDER_IMG];
+  const data={title,type,price,rooms,addr,phone,desc,images};
+
+  if(editingMode==='admin'){
+    let listings=getListings();
+    if(editingId){listings=listings.map(l=>l.id===editingId?{...l,...data}:l)}
+    else{listings.unshift({id:Date.now(),...data})}
+    localStorage.setItem('emlak_listings',JSON.stringify(listings));
+  } else {
+    // sayt ziyarətçisi: elan moderasiyaya düşür
+    let moder=getModer();
+    if(editingId){moder=moder.map(m=>m.id===editingId?{...m,...data}:m)}
+    else{moder.push({id:Date.now(),...data})}
+    localStorage.setItem('emlak_moder',JSON.stringify(moder));
+    alert("Göndərildi! Admin təsdiqləyəcək.");
+  }
+  closeClientForm();render();
+}
+
+function renderAdminList(){
+  const listings=getListings();
+  document.getElementById('adminList').innerHTML=listings.map(l=>`<div class="item"><img src="${(l.images&&l.images[0])||PLACEHOLDER_IMG}"><div style="flex:1"><b>${l.title}</b><br><span class="muted" style="font-size:11px">${l.price} AZN</span></div><div class="itembtns"><button class="btn btn-o" style="padding:6px 10px" onclick='editListing(${l.id})'>Redaktə</button><button class="btn btn-o" style="padding:6px 10px" onclick="deleteListing(${l.id})">Sil</button></div></div>`).join('');
+  const moder=getModer();
+  document.getElementById('moderList').innerHTML=moder.length?moder.map(m=>`<div class="item"><img src="${(m.images&&m.images[0])||PLACEHOLDER_IMG}"><div style="flex:1"><b>${m.title}</b><br><span class="muted">${m.price} AZN • ${m.phone}</span></div><div class="itembtns"><button class="btn btn-o" style="padding:6px 10px" onclick='editModerItem(${m.id})'>Redaktə</button><button class="btn btn-p" style="padding:6px 10px" onclick="approve(${m.id})">Təsdiq</button><button class="btn btn-o" style="padding:6px 10px" onclick="reject(${m.id})">X</button></div></div>`).join(''):'<p class="muted">Yoxdur</p>';
+}
+function editListing(id){const l=getListings().find(x=>x.id===id);if(l)openClientForm('admin',l)}
+function editModerItem(id){const m=getModer().find(x=>x.id===id);if(m)openClientForm('client',m)}
+function deleteListing(id){if(!confirm("Sil?"))return;let l=getListings().filter(x=>x.id!==id);localStorage.setItem('emlak_listings',JSON.stringify(l));render()}
+function approve(id){let moder=getModer();let item=moder.find(x=>x.id===id);if(!item)return;let listings=getListings();listings.unshift(item);localStorage.setItem('emlak_listings',JSON.stringify(listings));localStorage.setItem('emlak_moder',JSON.stringify(moder.filter(x=>x.id!==id)));render()}
+function reject(id){let moder=getModer().filter(x=>x.id!==id);localStorage.setItem('emlak_moder',JSON.stringify(moder));render()}
+
+function saveSettings(){
+  const prev=getSettings();
+  const s={phone:document.getElementById('setPhone').value,addr:document.getElementById('setAddr').value,wa:document.getElementById('setWa').value,ig:document.getElementById('setIg').value,tt:document.getElementById('setTt').value,tg:document.getElementById('setTg').value,pass:prev.pass};
+  const newPass=document.getElementById('setPass').value;
+  if(newPass){s.pass=btoa(newPass)}
+  localStorage.setItem('emlak_settings',JSON.stringify(s));
+  document.getElementById('setPass').value='';
+  alert("Saxlanıldı!");applySettingsToUI()
+}
+
+function switchTab(t){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));document.getElementById('tab-listings').style.display=t==='listings'?'block':'none';document.getElementById('tab-moder').style.display=t==='moder'?'block':'none';document.getElementById('tab-settings').style.display=t==='settings'?'block':'none';document.getElementById('tab-seo').style.display=t==='seo'?'block':'none'}
+function checkHash(){if(location.hash==='#admin')document.getElementById('adminPanel').classList.add('active');else document.getElementById('adminPanel').classList.remove('active')}
+window.addEventListener('hashchange',checkHash);
+
+function login(){
+  const input=document.getElementById('adminPass').value;
+  const s=getSettings();
+  const realPass=s.pass?atob(s.pass):'admin123';
+  if(input===realPass){localStorage.setItem('admin_ok','1');document.getElementById('loginBox').style.display='none';document.getElementById('adminContent').style.display='block';document.getElementById('adminPass').value='';renderAdminList()}
+  else alert("Səhv parol")
+}
+function logout(){localStorage.removeItem('admin_ok');document.getElementById('loginBox').style.display='block';document.getElementById('adminContent').style.display='none'}
+(function init(){if(localStorage.getItem('admin_ok')==='1'){document.getElementById('loginBox').style.display='none';document.getElementById('adminContent').style.display='block'}setLang(currentLang);render();checkHash()})();
+</script>
+</body>
+</html>
