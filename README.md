@@ -1,0 +1,34 @@
+Emlak Arenda
+AZRUEN
++994 55 000 00 00WhatsApp
+Azadlıq m. • Süleyman Sani Axundov 42
+Kirayə və satış üçün ən yaxşı mənzillər Bakıda
+Birbaşa sahibindən. Hər gün yeni elanlar. Öz elanını yerləşdir - təsdiqdən sonra çıxacaq.
+HamısıKirayəSatışOtaq123Axtar
+🔥 Bu gün 12 yeni elan. Pulsuz yerləşdirmə - moderasiyadan sonra.
+Əlaqə və ünvan
+Süleyman Sani Axundov 42, Azadlıq m., Bakı
+Zəng: +994 55 000 00 00IGTTTG
+Instagram, TikTok, Telegram: m_emlak_arenda / emlak_arenda
++ Öz elanını yerləşdir
+Son elanlar
+Admin panel
+Öz elanını əlavə et
+KirayəSatışGöndərBağla
+Admin - Emlak Arenda
+SaytÇıxış
+Giriş
+Parol: admin123
+Giriş
+ElanlarGözləyən (0)Nömrə / SosialGoogle SEO
+Elanlar
++ Yeni
+Təsdiq gözləyən
+Nömrə və ünvan
+TelefonÜnvanWhatsApp linkInstagramTikTokTelegramYadda saxla
+Google üçün
+1. Google Search Console: https://search.google.com/search-console
+2. Add property -> emlakarenda.netlify.app
+3. Sitemap: https://emlakarenda.netlify.app/sitemap.xml
+4. Netlify > Domain management > Add custom domain əlavə et
+Sayt artıq mobil üçün sürətli, meta teqlər var, Google 1-2 günə index edəcək.
